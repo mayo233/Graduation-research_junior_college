@@ -1,0 +1,623 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1705 ]
+[d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\isxdigit.c
+[v _isxdigit isxdigit `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"5 H:\PIC\WorkSpace\SeriI2c.X\I2CBase.c
+[v _initI2C initI2C `(v  1 e 1 0 ]
+"18
+[v _sendI2C sendI2C `(v  1 e 1 0 ]
+"36
+[v _sendI2Cbyte sendI2Cbyte `(v  1 e 1 0 ]
+"58
+[v _readI2C readI2C `(i  1 e 2 0 ]
+"83
+[v _waitIdleI2C waitIdleI2C `(v  1 e 1 0 ]
+"40 H:\PIC\WorkSpace\SeriI2c.X\parseline.c
+[v _setConvMode setConvMode `(v  1 e 1 0 ]
+"46
+[v _newConvLine newConvLine `(v  1 e 1 0 ]
+"52
+[v _skipblankLine skipblankLine `(v  1 e 1 0 ]
+"57
+[v _endofLine endofLine `(uc  1 e 1 0 ]
+"63
+[v _nextItem nextItem `(*.5uc  1 e 1 0 ]
+"78
+[v _myUpper myUpper `(uc  1 e 1 0 ]
+"84
+[v _cmdCheck cmdCheck `(uc  1 e 1 0 ]
+"96
+[v _parseCommand parseCommand `(v  1 e 1 0 ]
+"125
+[v _stobyte stobyte `(uc  1 e 1 0 ]
+"187
+[v _prefEcho prefEcho `(v  1 e 1 0 ]
+"218
+[v _prefSet prefSet `(v  1 e 1 0 ]
+"252
+[v _prefGet prefGet `(v  1 e 1 0 ]
+"290
+[v _prefX prefX `(v  1 e 1 0 ]
+"313
+[v _printInvArgErr printInvArgErr `(v  1 e 1 0 ]
+"83 H:\PIC\WorkSpace\SeriI2c.X\SerialBase.c
+[v _isr isr `II(v  1 e 1 0 ]
+"120
+[v _main main `(i  1 e 2 0 ]
+"194
+[v _copyBuffer copyBuffer `(v  1 e 1 0 ]
+"213
+[v _trySend trySend `(v  1 e 1 0 ]
+"217
+[v _QueIn QueIn `(uc  1 e 1 0 ]
+[v i1_QueIn QueIn `(uc  1 e 1 0 ]
+"225
+[v _QueOut QueOut `(uc  1 e 1 0 ]
+[v i1_QueOut QueOut `(uc  1 e 1 0 ]
+"232
+[v _Send Send `(v  1 e 1 0 ]
+[v i1_Send Send `(v  1 e 1 0 ]
+"252
+[v _SendStr SendStr `(v  1 e 1 0 ]
+"262
+[v _sndStr sndStr `(v  1 e 1 0 ]
+"269
+[v _SendHex SendHex `(v  1 e 1 0 ]
+"280
+[v _copyConstStr copyConstStr `(v  1 e 1 0 ]
+[s S121 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h
+[s S130 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S135 . 1 `S121 1 . 1 0 `S130 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES135  1 e 1 @11 ]
+[s S174 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+]
+"494
+[u S181 . 1 `S174 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES181  1 e 1 @14 ]
+[s S22 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"550
+[s S31 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CCPIF 1 0 :1:2 
+]
+[u S34 . 1 `S22 1 . 1 0 `S31 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES34  1 e 1 @17 ]
+"1022
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1067
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S93 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1138
+[s S102 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CCPIE 1 0 :1:2 
+]
+[u S105 . 1 `S93 1 . 1 0 `S102 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES105  1 e 1 @145 ]
+"1430
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1547
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2681
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2726
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2967
+[v _RC1REG RC1REG `VEuc  1 e 1 @409 ]
+"3021
+[v _TX1REG TX1REG `VEuc  1 e 1 @410 ]
+"3075
+[v _SP1BRG SP1BRG `VEus  1 e 2 @411 ]
+"3206
+[v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
+[s S50 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3232
+[u S59 . 1 `S50 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES59  1 e 1 @413 ]
+"3386
+[v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
+[s S203 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3412
+[u S212 . 1 `S203 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES212  1 e 1 @414 ]
+"3566
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
+"3812
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3862
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"3912
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"4166
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
+"4674
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+[s S356 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"4696
+[u S365 . 1 `S356 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES365  1 e 1 @532 ]
+"4796
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+[s S381 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"4829
+[s S387 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S392 . 1 `S381 1 . 1 0 `S387 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES392  1 e 1 @533 ]
+[s S334 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"5088
+[u S343 . 1 `S334 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES343  1 e 1 @534 ]
+"8148
+[v _RXPPS RXPPS `VEuc  1 e 1 @3620 ]
+"8368
+[v _RC0PPS RC0PPS `VEuc  1 e 1 @3744 ]
+"8388
+[v _RC1PPS RC1PPS `VEuc  1 e 1 @3745 ]
+"8448
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3748 ]
+"13 H:\PIC\WorkSpace\SeriI2c.X\parseline.c
+[v _lineBuff lineBuff `*.5uc  1 e 1 0 ]
+"14
+[v _convMode convMode `uc  1 e 1 0 ]
+[v _convData convData `uc  1 e 1 0 ]
+[v _convErr convErr `uc  1 e 1 0 ]
+"22
+[v _cmdEcho cmdEcho `DC[5]uc  1 e 5 0 ]
+"23
+[v _cmdGet cmdGet `DC[4]uc  1 e 4 0 ]
+"24
+[v _cmdSet cmdSet `DC[4]uc  1 e 4 0 ]
+"25
+[v _cmdX cmdX `DC[2]uc  1 e 2 0 ]
+"34
+[v _cmdArray cmdArray `[4]*.25DCuc  1 e 8 0 ]
+"35
+[v _prefArray prefArray `[4]*.37(v  1 e 8 0 ]
+"37
+[v _errMess errMess `DC[18]uc  1 e 18 0 ]
+"38
+[v _ivaMess ivaMess `DC[19]uc  1 e 19 0 ]
+"60 H:\PIC\WorkSpace\SeriI2c.X\SerialBase.c
+[v _msghi msghi `DC[6]uc  1 e 6 0 ]
+"71
+[v _Index Index `uc  1 e 1 0 ]
+[v _Tindex Tindex `uc  1 e 1 0 ]
+[v _Sending Sending `uc  1 e 1 0 ]
+"72
+[v _RcvFlag RcvFlag `uc  1 e 1 0 ]
+[v _TxFlag TxFlag `uc  1 e 1 0 ]
+"73
+[v _RcvBuf RcvBuf `[32]uc  1 e 32 0 ]
+"74
+[v _SndBuf SndBuf `[32]uc  1 e 32 0 ]
+"75
+[v _SBuff SBuff `[32]uc  1 e 32 0 ]
+"76
+[v _Buffer Buffer `[32]uc  1 e 32 0 ]
+"78
+[v _echoFLG echoFLG `uc  1 e 1 0 ]
+"120
+[v _main main `(i  1 e 2 0 ]
+{
+"122
+[v main@loop loop `ui  1 a 2 57 ]
+"121
+[v main@bring bring `uc  1 a 1 59 ]
+"192
+} 0
+"213
+[v _trySend trySend `(v  1 e 1 0 ]
+{
+"215
+} 0
+"96 H:\PIC\WorkSpace\SeriI2c.X\parseline.c
+[v _parseCommand parseCommand `(v  1 e 1 0 ]
+{
+"98
+[v parseCommand@args args `[10]*.5uc  1 a 10 42 ]
+"97
+[v parseCommand@i i `uc  1 a 1 54 ]
+[v parseCommand@p p `*.5uc  1 a 1 53 ]
+[v parseCommand@q q `*.5uc  1 a 1 52 ]
+"122
+} 0
+"218
+[v _prefSet prefSet `(v  1 e 1 0 ]
+{
+"220
+[v prefSet@buf buf `[10]uc  1 a 10 22 ]
+"219
+[v prefSet@i i `uc  1 a 1 35 ]
+[v prefSet@addr addr `uc  1 a 1 34 ]
+"218
+[v prefSet@args args `*.4*.5uc  1 p 1 16 ]
+"247
+} 0
+"252
+[v _prefGet prefGet `(v  1 e 1 0 ]
+{
+"254
+[v prefGet@buf buf `[16]uc  1 a 16 19 ]
+"253
+[v prefGet@addr addr `uc  1 a 1 36 ]
+[v prefGet@reg reg `uc  1 a 1 35 ]
+"252
+[v prefGet@args args `*.4*.5uc  1 p 1 16 ]
+"288
+} 0
+"187
+[v _prefEcho prefEcho `(v  1 e 1 0 ]
+{
+"188
+[v prefEcho@f f `[4]uc  1 a 4 19 ]
+"187
+[v prefEcho@args args `*.4*.5uc  1 p 1 16 ]
+"213
+} 0
+"290
+[v _prefX prefX `(v  1 e 1 0 ]
+{
+"292
+[v prefX@buf buf `[10]uc  1 a 10 25 ]
+"293
+[v prefX@x x `[3]uc  1 a 3 22 ]
+"291
+[v prefX@i i `uc  1 a 1 40 ]
+[v prefX@addr addr `uc  1 a 1 39 ]
+[v prefX@j j `uc  1 a 1 38 ]
+[v prefX@reg reg `uc  1 a 1 37 ]
+"290
+[v prefX@args args `*.4*.5uc  1 p 1 16 ]
+"292
+[v prefX@F4812 F4812 `[3]uc  1 s 3 F4812 ]
+"311
+} 0
+"36 H:\PIC\WorkSpace\SeriI2c.X\I2CBase.c
+[v _sendI2Cbyte sendI2Cbyte `(v  1 e 1 0 ]
+{
+[v sendI2Cbyte@addr addr `uc  1 a 1 wreg ]
+[v sendI2Cbyte@addr addr `uc  1 a 1 wreg ]
+[v sendI2Cbyte@reg reg `uc  1 p 1 0 ]
+[v sendI2Cbyte@data data `uc  1 p 1 1 ]
+[v sendI2Cbyte@addr addr `uc  1 a 1 2 ]
+"56
+} 0
+"125 H:\PIC\WorkSpace\SeriI2c.X\parseline.c
+[v _stobyte stobyte `(uc  1 e 1 0 ]
+{
+[v stobyte@s s `*.5uc  1 a 1 wreg ]
+"127
+[v stobyte@ans ans `uc  1 a 1 14 ]
+"125
+[v stobyte@s s `*.5uc  1 a 1 wreg ]
+"127
+[v stobyte@s s `*.5uc  1 a 1 15 ]
+"152
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+{
+[v isupper@c c `i  1 p 2 0 ]
+"8
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 0 ]
+"8
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"18 H:\PIC\WorkSpace\SeriI2c.X\I2CBase.c
+[v _sendI2C sendI2C `(v  1 e 1 0 ]
+{
+[v sendI2C@addr addr `uc  1 a 1 wreg ]
+[v sendI2C@addr addr `uc  1 a 1 wreg ]
+[v sendI2C@buf buf `*.4uc  1 p 1 0 ]
+[v sendI2C@n n `uc  1 p 1 1 ]
+[v sendI2C@addr addr `uc  1 a 1 3 ]
+"34
+} 0
+"58
+[v _readI2C readI2C `(i  1 e 2 0 ]
+{
+[v readI2C@addr addr `uc  1 a 1 wreg ]
+"59
+[v readI2C@num num `uc  1 a 1 3 ]
+"58
+[v readI2C@addr addr `uc  1 a 1 wreg ]
+[v readI2C@buf buf `*.4uc  1 p 1 0 ]
+[v readI2C@n n `uc  1 p 1 1 ]
+[v readI2C@addr addr `uc  1 a 1 4 ]
+"81
+} 0
+"83
+[v _waitIdleI2C waitIdleI2C `(v  1 e 1 0 ]
+{
+"86
+} 0
+"269 H:\PIC\WorkSpace\SeriI2c.X\SerialBase.c
+[v _SendHex SendHex `(v  1 e 1 0 ]
+{
+[v SendHex@b b `uc  1 a 1 wreg ]
+"270
+[v SendHex@c c `uc  1 a 1 7 ]
+"269
+[v SendHex@b b `uc  1 a 1 wreg ]
+[v SendHex@b b `uc  1 a 1 6 ]
+"278
+} 0
+"313 H:\PIC\WorkSpace\SeriI2c.X\parseline.c
+[v _printInvArgErr printInvArgErr `(v  1 e 1 0 ]
+{
+[v printInvArgErr@args args `*.4*.5uc  1 a 1 wreg ]
+"314
+[v printInvArgErr@i i `uc  1 a 1 12 ]
+"313
+[v printInvArgErr@args args `*.4*.5uc  1 a 1 wreg ]
+"315
+[v printInvArgErr@args args `*.4*.5uc  1 a 1 13 ]
+"323
+} 0
+"262 H:\PIC\WorkSpace\SeriI2c.X\SerialBase.c
+[v _sndStr sndStr `(v  1 e 1 0 ]
+{
+"263
+[v sndStr@q q `*.4uc  1 a 1 10 ]
+"262
+[v sndStr@p p `*.39uc  1 p 2 7 ]
+"267
+} 0
+"252
+[v _SendStr SendStr `(v  1 e 1 0 ]
+{
+"253
+[v SendStr@str str `*.4uc  1 a 1 6 ]
+"254
+[v SendStr@i i `uc  1 a 1 5 ]
+"260
+} 0
+"232
+[v _Send Send `(v  1 e 1 0 ]
+{
+[v Send@txchar txchar `uc  1 a 1 wreg ]
+[v Send@txchar txchar `uc  1 a 1 wreg ]
+[v Send@txchar txchar `uc  1 a 1 3 ]
+"250
+} 0
+"225
+[v _QueOut QueOut `(uc  1 e 1 0 ]
+{
+"226
+[v QueOut@c c `uc  1 a 1 1 ]
+"230
+} 0
+"217
+[v _QueIn QueIn `(uc  1 e 1 0 ]
+{
+[v QueIn@c c `uc  1 a 1 wreg ]
+[v QueIn@c c `uc  1 a 1 wreg ]
+[v QueIn@c c `uc  1 a 1 1 ]
+"223
+} 0
+"280
+[v _copyConstStr copyConstStr `(v  1 e 1 0 ]
+{
+[v copyConstStr@src src `*.25DCuc  1 p 2 0 ]
+[v copyConstStr@dst dst `*.4uc  1 p 1 2 ]
+"285
+} 0
+"63 H:\PIC\WorkSpace\SeriI2c.X\parseline.c
+[v _nextItem nextItem `(*.5uc  1 e 1 0 ]
+{
+"64
+[v nextItem@p p `*.5uc  1 a 1 13 ]
+"74
+} 0
+"57
+[v _endofLine endofLine `(uc  1 e 1 0 ]
+{
+[v endofLine@flag flag `uc  1 a 1 wreg ]
+[v endofLine@flag flag `uc  1 a 1 wreg ]
+[v endofLine@flag flag `uc  1 a 1 10 ]
+"61
+} 0
+"52
+[v _skipblankLine skipblankLine `(v  1 e 1 0 ]
+{
+"54
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 0 ]
+"8
+} 0
+"46 H:\PIC\WorkSpace\SeriI2c.X\parseline.c
+[v _newConvLine newConvLine `(v  1 e 1 0 ]
+{
+[v newConvLine@p p `*.5uc  1 a 1 wreg ]
+[v newConvLine@p p `*.5uc  1 a 1 wreg ]
+[v newConvLine@p p `*.5uc  1 a 1 3 ]
+"49
+} 0
+"40
+[v _setConvMode setConvMode `(v  1 e 1 0 ]
+{
+[v setConvMode@m m `uc  1 a 1 wreg ]
+[v setConvMode@m m `uc  1 a 1 wreg ]
+[v setConvMode@m m `uc  1 a 1 1 ]
+"44
+} 0
+"84
+[v _cmdCheck cmdCheck `(uc  1 e 1 0 ]
+{
+[v cmdCheck@b b `*.5uc  1 a 1 wreg ]
+"85
+[v cmdCheck@n n `uc  1 a 1 4 ]
+"84
+[v cmdCheck@b b `*.5uc  1 a 1 wreg ]
+[v cmdCheck@c c `*.25DCuc  1 p 2 1 ]
+[v cmdCheck@b b `*.5uc  1 a 1 5 ]
+"91
+} 0
+"78
+[v _myUpper myUpper `(uc  1 e 1 0 ]
+{
+[v myUpper@c c `uc  1 a 1 wreg ]
+[v myUpper@c c `uc  1 a 1 wreg ]
+[v myUpper@c c `uc  1 a 1 0 ]
+"81
+} 0
+"5 H:\PIC\WorkSpace\SeriI2c.X\I2CBase.c
+[v _initI2C initI2C `(v  1 e 1 0 ]
+{
+[v initI2C@flag flag `uc  1 a 1 wreg ]
+"7
+[v initI2C@baud baud `uc  1 a 1 3 ]
+"6
+[v initI2C@stat stat `uc  1 a 1 2 ]
+"5
+[v initI2C@flag flag `uc  1 a 1 wreg ]
+[v initI2C@flag flag `uc  1 a 1 1 ]
+"15
+} 0
+"194 H:\PIC\WorkSpace\SeriI2c.X\SerialBase.c
+[v _copyBuffer copyBuffer `(v  1 e 1 0 ]
+{
+"197
+[v copyBuffer@q q `*.5uc  1 a 1 2 ]
+"196
+[v copyBuffer@p p `*.5uc  1 a 1 1 ]
+"204
+} 0
+"83
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"84
+[v isr@data data `uc  1 a 1 5 ]
+"116
+} 0
+"232
+[v i1_Send Send `(v  1 e 1 0 ]
+{
+[v i1Send@txchar txchar `uc  1 a 1 wreg ]
+[v i1Send@txchar txchar `uc  1 a 1 wreg ]
+[v i1Send@txchar txchar `uc  1 a 1 3 ]
+"250
+} 0
+"225
+[v i1_QueOut QueOut `(uc  1 e 1 0 ]
+{
+[v i1QueOut@c QueOut `uc  1 a 1 1 ]
+"230
+} 0
+"217
+[v i1_QueIn QueIn `(uc  1 e 1 0 ]
+{
+[v i1QueIn@c c `uc  1 a 1 wreg ]
+[v i1QueIn@c c `uc  1 a 1 wreg ]
+[v i1QueIn@c c `uc  1 a 1 1 ]
+"223
+} 0

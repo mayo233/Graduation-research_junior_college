@@ -1,0 +1,1850 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"535 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 535:     struct {
+[s S38 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S38 . TMR1IF TMR2IF CCP1IF SSP1IF TXIF RCIF ADIF TMR1GIF ]
+"545
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 545:     struct {
+[s S39 :2 `uc 1 :1 `uc 1 ]
+[n S39 . . CCPIF ]
+"534
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 534: typedef union {
+[u S37 `S38 1 `S39 1 ]
+[n S37 . . . ]
+"550
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 550: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x011)));
+[v _PIR1bits `VS37 ~T0 @X0 0 e@17 ]
+"3221
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3221:     struct {
+[s S181 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S181 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"3220
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3220: typedef union {
+[u S180 `S181 1 ]
+[n S180 . . ]
+"3232
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3232: extern volatile RC1STAbits_t RC1STAbits __attribute__((address(0x19D)));
+[v _RC1STAbits `VS180 ~T0 @X0 0 e@413 ]
+"2967
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2967: extern volatile unsigned char RC1REG __attribute__((address(0x199)));
+[v _RC1REG `Vuc ~T0 @X0 0 e@409 ]
+"3206
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3206: extern volatile unsigned char RC1STA __attribute__((address(0x19D)));
+[v _RC1STA `Vuc ~T0 @X0 0 e@413 ]
+"16 ./serial.h
+[; ;./serial.h: 16: void Send(unsigned char),doSend(void),SendStr(void );
+[v _Send `(v ~T0 @X0 0 ef1`uc ]
+[p mainexit ]
+"1547 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1547: extern volatile unsigned char OSCCON __attribute__((address(0x099)));
+[v _OSCCON `Vuc ~T0 @X0 0 e@153 ]
+"2681
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2681: extern volatile unsigned char ANSELA __attribute__((address(0x18C)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
+"2726
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2726: extern volatile unsigned char ANSELC __attribute__((address(0x18E)));
+[v _ANSELC `Vuc ~T0 @X0 0 e@398 ]
+"1022
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1022: extern volatile unsigned char TRISA __attribute__((address(0x08C)));
+[v _TRISA `Vuc ~T0 @X0 0 e@140 ]
+"1067
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1067: extern volatile unsigned char TRISC __attribute__((address(0x08E)));
+[v _TRISC `Vuc ~T0 @X0 0 e@142 ]
+"3812
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3812: extern volatile unsigned char WPUA __attribute__((address(0x20C)));
+[v _WPUA `Vuc ~T0 @X0 0 e@524 ]
+"3862
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3862: extern volatile unsigned char WPUC __attribute__((address(0x20E)));
+[v _WPUC `Vuc ~T0 @X0 0 e@526 ]
+"8448
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8448: extern volatile unsigned char RC4PPS __attribute__((address(0xEA4)));
+[v _RC4PPS `Vuc ~T0 @X0 0 e@3748 ]
+"8148
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8148: extern volatile unsigned char RXPPS __attribute__((address(0xE24)));
+[v _RXPPS `Vuc ~T0 @X0 0 e@3620 ]
+"8368
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8368: extern volatile unsigned char RC0PPS __attribute__((address(0xEA0)));
+[v _RC0PPS `Vuc ~T0 @X0 0 e@3744 ]
+"8388
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8388: extern volatile unsigned char RC1PPS __attribute__((address(0xEA1)));
+[v _RC1PPS `Vuc ~T0 @X0 0 e@3745 ]
+"3386
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3386: extern volatile unsigned char TX1STA __attribute__((address(0x19E)));
+[v _TX1STA `Vuc ~T0 @X0 0 e@414 ]
+"3566
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3566: extern volatile unsigned char BAUD1CON __attribute__((address(0x19F)));
+[v _BAUD1CON `Vuc ~T0 @X0 0 e@415 ]
+"3075
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3075: extern volatile unsigned short SP1BRG __attribute__((address(0x19B)));
+[v _SP1BRG `Vus ~T0 @X0 0 e@411 ]
+"1430
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1430: extern volatile unsigned char WDTCON __attribute__((address(0x097)));
+[v _WDTCON `Vuc ~T0 @X0 0 e@151 ]
+"1123
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1123:     struct {
+[s S68 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S68 . TMR1IE TMR2IE CCP1IE SSP1IE TXIE RCIE ADIE TMR1GIE ]
+"1133
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1133:     struct {
+[s S69 :2 `uc 1 :1 `uc 1 ]
+[n S69 . . CCPIE ]
+"1122
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1122: typedef union {
+[u S67 `S68 1 `S69 1 ]
+[n S67 . . . ]
+"1138
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1138: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x091)));
+[v _PIE1bits `VS67 ~T0 @X0 0 e@145 ]
+"357
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 357:     struct {
+[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
+"367
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 367:     struct {
+[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S32 . . T0IF . T0IE ]
+"356
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 356: typedef union {
+[u S30 `S31 1 `S32 1 ]
+[n S30 . . . ]
+"374
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
+"22 ./I2CMaster.h
+[; ;./I2CMaster.h: 22: void initI2C(unsigned char flag);
+[v _initI2C `(v ~T0 @X0 0 ef1`uc ]
+[v F4091 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic.h
+[v __delay `JF4091 ~T0 @X0 0 e ]
+[p i __delay ]
+"18 ./serial.h
+[; ;./serial.h: 18: void copyConstStr(const unsigned char*,unsigned char*);
+[v _copyConstStr `(v ~T0 @X0 0 ef2`*Cuc`*uc ]
+"16
+[; ;./serial.h: 16: void Send(unsigned char),doSend(void),SendStr(void );
+[v _SendStr `(v ~T0 @X0 0 ef ]
+"485 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 485:     struct {
+[s S36 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S36 . RC0 RC1 RC2 RC3 RC4 RC5 ]
+"484
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 484: typedef union {
+[u S35 `S36 1 ]
+[n S35 . . ]
+"494
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 494: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x00E)));
+[v _PORTCbits `VS35 ~T0 @X0 0 e@14 ]
+"22 ./serial.h
+[; ;./serial.h: 22: void trySend();
+[v _trySend `(v ~T0 @X0 0 e? ]
+"14
+[; ;./serial.h: 14: void copyBuffer(void);
+[v _copyBuffer `(v ~T0 @X0 0 ef ]
+"81 SerialBase.c
+[; ;SerialBase.c: 81: void parseCommand();
+[v _parseCommand `(v ~T0 @X0 0 e? ]
+"3401 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3401:     struct {
+[s S187 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S187 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
+"3400
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3400: typedef union {
+[u S186 `S187 1 ]
+[n S186 . . ]
+"3412
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3412: extern volatile TX1STAbits_t TX1STAbits __attribute__((address(0x19E)));
+[v _TX1STAbits `VS186 ~T0 @X0 0 e@414 ]
+"3021
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3021: extern volatile unsigned char TX1REG __attribute__((address(0x19A)));
+[v _TX1REG `Vuc ~T0 @X0 0 e@410 ]
+"21 ./serial.h
+[; ;./serial.h: 21: unsigned char QueOut(void);
+[v _QueOut `(uc ~T0 @X0 0 ef ]
+"6 SerialBase.c
+[p x FOSC = INTOSC ]
+"7
+[p x WDTE = ON ]
+"8
+[p x PWRTE = OFF ]
+"9
+[p x MCLRE = ON ]
+"10
+[p x CP = OFF ]
+"12
+[p x BOREN = OFF ]
+"13
+[p x CLKOUTEN = OFF ]
+"14
+[p x IESO = OFF ]
+"15
+[p x FCMEN = OFF ]
+"18
+[p x WRT = OFF ]
+"19
+[p x PPS1WAY = ON ]
+"20
+[p x ZCDDIS = ON ]
+"21
+[p x PLLEN = ON ]
+"22
+[p x STVREN = ON ]
+"23
+[p x BORV = LO ]
+"24
+[p x LVP = OFF ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 54: __asm("INDF0 equ 00h");
+[; <" INDF0 equ 00h ;# ">
+"74
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 74: __asm("INDF1 equ 01h");
+[; <" INDF1 equ 01h ;# ">
+"94
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 94: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"114
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 114: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"177
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 177: __asm("FSR0L equ 04h");
+[; <" FSR0L equ 04h ;# ">
+"197
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 197: __asm("FSR0H equ 05h");
+[; <" FSR0H equ 05h ;# ">
+"221
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 221: __asm("FSR1L equ 06h");
+[; <" FSR1L equ 06h ;# ">
+"241
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 241: __asm("FSR1H equ 07h");
+[; <" FSR1H equ 07h ;# ">
+"261
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 261: __asm("BSR equ 08h");
+[; <" BSR equ 08h ;# ">
+"313
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 313: __asm("WREG equ 09h");
+[; <" WREG equ 09h ;# ">
+"333
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 333: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"353
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 353: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"431
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 431: __asm("PORTA equ 0Ch");
+[; <" PORTA equ 0Ch ;# ">
+"481
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 481: __asm("PORTC equ 0Eh");
+[; <" PORTC equ 0Eh ;# ">
+"531
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 531: __asm("PIR1 equ 011h");
+[; <" PIR1 equ 011h ;# ">
+"602
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 602: __asm("PIR2 equ 012h");
+[; <" PIR2 equ 012h ;# ">
+"659
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 659: __asm("PIR3 equ 013h");
+[; <" PIR3 equ 013h ;# ">
+"704
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 704: __asm("TMR0 equ 015h");
+[; <" TMR0 equ 015h ;# ">
+"724
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 724: __asm("TMR1 equ 016h");
+[; <" TMR1 equ 016h ;# ">
+"731
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 731: __asm("TMR1L equ 016h");
+[; <" TMR1L equ 016h ;# ">
+"751
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 751: __asm("TMR1H equ 017h");
+[; <" TMR1H equ 017h ;# ">
+"771
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 771: __asm("T1CON equ 018h");
+[; <" T1CON equ 018h ;# ">
+"843
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 843: __asm("T1GCON equ 019h");
+[; <" T1GCON equ 019h ;# ">
+"913
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 913: __asm("TMR2 equ 01Ah");
+[; <" TMR2 equ 01Ah ;# ">
+"933
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 933: __asm("PR2 equ 01Bh");
+[; <" PR2 equ 01Bh ;# ">
+"953
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 953: __asm("T2CON equ 01Ch");
+[; <" T2CON equ 01Ch ;# ">
+"1024
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1024: __asm("TRISA equ 08Ch");
+[; <" TRISA equ 08Ch ;# ">
+"1069
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1069: __asm("TRISC equ 08Eh");
+[; <" TRISC equ 08Eh ;# ">
+"1119
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1119: __asm("PIE1 equ 091h");
+[; <" PIE1 equ 091h ;# ">
+"1190
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1190: __asm("PIE2 equ 092h");
+[; <" PIE2 equ 092h ;# ">
+"1247
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1247: __asm("PIE3 equ 093h");
+[; <" PIE3 equ 093h ;# ">
+"1292
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1292: __asm("OPTION_REG equ 095h");
+[; <" OPTION_REG equ 095h ;# ">
+"1375
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1375: __asm("PCON equ 096h");
+[; <" PCON equ 096h ;# ">
+"1432
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1432: __asm("WDTCON equ 097h");
+[; <" WDTCON equ 097h ;# ">
+"1491
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1491: __asm("OSCTUNE equ 098h");
+[; <" OSCTUNE equ 098h ;# ">
+"1549
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1549: __asm("OSCCON equ 099h");
+[; <" OSCCON equ 099h ;# ">
+"1621
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1621: __asm("OSCSTAT equ 09Ah");
+[; <" OSCSTAT equ 09Ah ;# ">
+"1683
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1683: __asm("ADRES equ 09Bh");
+[; <" ADRES equ 09Bh ;# ">
+"1690
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1690: __asm("ADRESL equ 09Bh");
+[; <" ADRESL equ 09Bh ;# ">
+"1710
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1710: __asm("ADRESH equ 09Ch");
+[; <" ADRESH equ 09Ch ;# ">
+"1730
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1730: __asm("ADCON0 equ 09Dh");
+[; <" ADCON0 equ 09Dh ;# ">
+"1810
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1810: __asm("ADCON1 equ 09Eh");
+[; <" ADCON1 equ 09Eh ;# ">
+"1863
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1863: __asm("ADCON2 equ 09Fh");
+[; <" ADCON2 equ 09Fh ;# ">
+"1911
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1911: __asm("LATA equ 010Ch");
+[; <" LATA equ 010Ch ;# ">
+"1956
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 1956: __asm("LATC equ 010Eh");
+[; <" LATC equ 010Eh ;# ">
+"2006
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2006: __asm("CM1CON0 equ 0111h");
+[; <" CM1CON0 equ 0111h ;# ">
+"2063
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2063: __asm("CM1CON1 equ 0112h");
+[; <" CM1CON1 equ 0112h ;# ">
+"2139
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2139: __asm("CM2CON0 equ 0113h");
+[; <" CM2CON0 equ 0113h ;# ">
+"2196
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2196: __asm("CM2CON1 equ 0114h");
+[; <" CM2CON1 equ 0114h ;# ">
+"2272
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2272: __asm("CMOUT equ 0115h");
+[; <" CMOUT equ 0115h ;# ">
+"2298
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2298: __asm("BORCON equ 0116h");
+[; <" BORCON equ 0116h ;# ">
+"2331
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2331: __asm("FVRCON equ 0117h");
+[; <" FVRCON equ 0117h ;# ">
+"2407
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2407: __asm("DAC1CON0 equ 0118h");
+[; <" DAC1CON0 equ 0118h ;# ">
+"2517
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2517: __asm("DAC1CON1 equ 0119h");
+[; <" DAC1CON1 equ 0119h ;# ">
+"2637
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2637: __asm("ZCD1CON equ 011Ch");
+[; <" ZCD1CON equ 011Ch ;# ">
+"2683
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2683: __asm("ANSELA equ 018Ch");
+[; <" ANSELA equ 018Ch ;# ">
+"2728
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2728: __asm("ANSELC equ 018Eh");
+[; <" ANSELC equ 018Eh ;# ">
+"2778
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2778: __asm("PMADR equ 0191h");
+[; <" PMADR equ 0191h ;# ">
+"2785
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2785: __asm("PMADRL equ 0191h");
+[; <" PMADRL equ 0191h ;# ">
+"2805
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2805: __asm("PMADRH equ 0192h");
+[; <" PMADRH equ 0192h ;# ">
+"2825
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2825: __asm("PMDAT equ 0193h");
+[; <" PMDAT equ 0193h ;# ">
+"2832
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2832: __asm("PMDATL equ 0193h");
+[; <" PMDATL equ 0193h ;# ">
+"2852
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2852: __asm("PMDATH equ 0194h");
+[; <" PMDATH equ 0194h ;# ">
+"2872
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2872: __asm("PMCON1 equ 0195h");
+[; <" PMCON1 equ 0195h ;# ">
+"2928
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2928: __asm("PMCON2 equ 0196h");
+[; <" PMCON2 equ 0196h ;# ">
+"2948
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2948: __asm("VREGCON equ 0197h");
+[; <" VREGCON equ 0197h ;# ">
+"2969
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2969: __asm("RC1REG equ 0199h");
+[; <" RC1REG equ 0199h ;# ">
+"2974
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2974: __asm("RCREG equ 0199h");
+[; <" RCREG equ 0199h ;# ">
+"2978
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 2978: __asm("RCREG1 equ 0199h");
+[; <" RCREG1 equ 0199h ;# ">
+"3023
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3023: __asm("TX1REG equ 019Ah");
+[; <" TX1REG equ 019Ah ;# ">
+"3028
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3028: __asm("TXREG1 equ 019Ah");
+[; <" TXREG1 equ 019Ah ;# ">
+"3032
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3032: __asm("TXREG equ 019Ah");
+[; <" TXREG equ 019Ah ;# ">
+"3077
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3077: __asm("SP1BRG equ 019Bh");
+[; <" SP1BRG equ 019Bh ;# ">
+"3084
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3084: __asm("SP1BRGL equ 019Bh");
+[; <" SP1BRGL equ 019Bh ;# ">
+"3089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3089: __asm("SPBRG equ 019Bh");
+[; <" SPBRG equ 019Bh ;# ">
+"3093
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3093: __asm("SPBRG1 equ 019Bh");
+[; <" SPBRG1 equ 019Bh ;# ">
+"3097
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3097: __asm("SPBRGL equ 019Bh");
+[; <" SPBRGL equ 019Bh ;# ">
+"3154
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3154: __asm("SP1BRGH equ 019Ch");
+[; <" SP1BRGH equ 019Ch ;# ">
+"3159
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3159: __asm("SPBRGH equ 019Ch");
+[; <" SPBRGH equ 019Ch ;# ">
+"3163
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3163: __asm("SPBRGH1 equ 019Ch");
+[; <" SPBRGH1 equ 019Ch ;# ">
+"3208
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3208: __asm("RC1STA equ 019Dh");
+[; <" RC1STA equ 019Dh ;# ">
+"3213
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3213: __asm("RCSTA1 equ 019Dh");
+[; <" RCSTA1 equ 019Dh ;# ">
+"3217
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3217: __asm("RCSTA equ 019Dh");
+[; <" RCSTA equ 019Dh ;# ">
+"3388
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3388: __asm("TX1STA equ 019Eh");
+[; <" TX1STA equ 019Eh ;# ">
+"3393
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3393: __asm("TXSTA1 equ 019Eh");
+[; <" TXSTA1 equ 019Eh ;# ">
+"3397
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3397: __asm("TXSTA equ 019Eh");
+[; <" TXSTA equ 019Eh ;# ">
+"3568
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3568: __asm("BAUD1CON equ 019Fh");
+[; <" BAUD1CON equ 019Fh ;# ">
+"3573
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3573: __asm("BAUDCON1 equ 019Fh");
+[; <" BAUDCON1 equ 019Fh ;# ">
+"3577
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3577: __asm("BAUDCTL1 equ 019Fh");
+[; <" BAUDCTL1 equ 019Fh ;# ">
+"3581
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3581: __asm("BAUDCON equ 019Fh");
+[; <" BAUDCON equ 019Fh ;# ">
+"3585
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3585: __asm("BAUDCTL equ 019Fh");
+[; <" BAUDCTL equ 019Fh ;# ">
+"3814
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3814: __asm("WPUA equ 020Ch");
+[; <" WPUA equ 020Ch ;# ">
+"3864
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3864: __asm("WPUC equ 020Eh");
+[; <" WPUC equ 020Eh ;# ">
+"3914
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3914: __asm("SSP1BUF equ 0211h");
+[; <" SSP1BUF equ 0211h ;# ">
+"3919
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 3919: __asm("SSPBUF equ 0211h");
+[; <" SSPBUF equ 0211h ;# ">
+"4168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 4168: __asm("SSP1ADD equ 0212h");
+[; <" SSP1ADD equ 0212h ;# ">
+"4173
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 4173: __asm("SSPADD equ 0212h");
+[; <" SSPADD equ 0212h ;# ">
+"4422
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 4422: __asm("SSP1MSK equ 0213h");
+[; <" SSP1MSK equ 0213h ;# ">
+"4427
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 4427: __asm("SSPMSK equ 0213h");
+[; <" SSPMSK equ 0213h ;# ">
+"4676
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 4676: __asm("SSP1STAT equ 0214h");
+[; <" SSP1STAT equ 0214h ;# ">
+"4681
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 4681: __asm("SSPSTAT equ 0214h");
+[; <" SSPSTAT equ 0214h ;# ">
+"4798
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 4798: __asm("SSP1CON1 equ 0215h");
+[; <" SSP1CON1 equ 0215h ;# ">
+"4803
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 4803: __asm("SSPCON equ 0215h");
+[; <" SSPCON equ 0215h ;# ">
+"4807
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 4807: __asm("SSPCON1 equ 0215h");
+[; <" SSPCON1 equ 0215h ;# ">
+"4811
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 4811: __asm("SSP1CON equ 0215h");
+[; <" SSP1CON equ 0215h ;# ">
+"5068
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5068: __asm("SSP1CON2 equ 0216h");
+[; <" SSP1CON2 equ 0216h ;# ">
+"5073
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5073: __asm("SSPCON2 equ 0216h");
+[; <" SSPCON2 equ 0216h ;# ">
+"5190
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5190: __asm("SSP1CON3 equ 0217h");
+[; <" SSP1CON3 equ 0217h ;# ">
+"5195
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5195: __asm("SSPCON3 equ 0217h");
+[; <" SSPCON3 equ 0217h ;# ">
+"5312
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5312: __asm("ODCONA equ 028Ch");
+[; <" ODCONA equ 028Ch ;# ">
+"5357
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5357: __asm("ODCONC equ 028Eh");
+[; <" ODCONC equ 028Eh ;# ">
+"5407
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5407: __asm("CCPR1 equ 0291h");
+[; <" CCPR1 equ 0291h ;# ">
+"5414
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5414: __asm("CCPR1L equ 0291h");
+[; <" CCPR1L equ 0291h ;# ">
+"5434
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5434: __asm("CCPR1H equ 0292h");
+[; <" CCPR1H equ 0292h ;# ">
+"5454
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5454: __asm("CCP1CON equ 0293h");
+[; <" CCP1CON equ 0293h ;# ">
+"5459
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5459: __asm("ECCP1CON equ 0293h");
+[; <" ECCP1CON equ 0293h ;# ">
+"5610
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5610: __asm("CCPR2 equ 0298h");
+[; <" CCPR2 equ 0298h ;# ">
+"5617
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5617: __asm("CCPR2L equ 0298h");
+[; <" CCPR2L equ 0298h ;# ">
+"5637
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5637: __asm("CCPR2H equ 0299h");
+[; <" CCPR2H equ 0299h ;# ">
+"5657
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5657: __asm("CCP2CON equ 029Ah");
+[; <" CCP2CON equ 029Ah ;# ">
+"5662
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5662: __asm("ECCP2CON equ 029Ah");
+[; <" ECCP2CON equ 029Ah ;# ">
+"5813
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5813: __asm("CCPTMRS equ 029Eh");
+[; <" CCPTMRS equ 029Eh ;# ">
+"5901
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5901: __asm("SLRCONA equ 030Ch");
+[; <" SLRCONA equ 030Ch ;# ">
+"5946
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5946: __asm("SLRCONC equ 030Eh");
+[; <" SLRCONC equ 030Eh ;# ">
+"5996
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 5996: __asm("INLVLA equ 038Ch");
+[; <" INLVLA equ 038Ch ;# ">
+"6046
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6046: __asm("INLVLC equ 038Eh");
+[; <" INLVLC equ 038Eh ;# ">
+"6096
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6096: __asm("IOCAP equ 0391h");
+[; <" IOCAP equ 0391h ;# ">
+"6146
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6146: __asm("IOCAN equ 0392h");
+[; <" IOCAN equ 0392h ;# ">
+"6196
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6196: __asm("IOCAF equ 0393h");
+[; <" IOCAF equ 0393h ;# ">
+"6246
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6246: __asm("IOCCP equ 0397h");
+[; <" IOCCP equ 0397h ;# ">
+"6296
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6296: __asm("IOCCN equ 0398h");
+[; <" IOCCN equ 0398h ;# ">
+"6346
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6346: __asm("IOCCF equ 0399h");
+[; <" IOCCF equ 0399h ;# ">
+"6396
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6396: __asm("TMR4 equ 0415h");
+[; <" TMR4 equ 0415h ;# ">
+"6416
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6416: __asm("PR4 equ 0416h");
+[; <" PR4 equ 0416h ;# ">
+"6436
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6436: __asm("T4CON equ 0417h");
+[; <" T4CON equ 0417h ;# ">
+"6507
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6507: __asm("TMR6 equ 041Ch");
+[; <" TMR6 equ 041Ch ;# ">
+"6527
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6527: __asm("PR6 equ 041Dh");
+[; <" PR6 equ 041Dh ;# ">
+"6547
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6547: __asm("T6CON equ 041Eh");
+[; <" T6CON equ 041Eh ;# ">
+"6618
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6618: __asm("OPA1CON equ 0511h");
+[; <" OPA1CON equ 0511h ;# ">
+"6672
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6672: __asm("OPA2CON equ 0515h");
+[; <" OPA2CON equ 0515h ;# ">
+"6726
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6726: __asm("PWM3DCL equ 0617h");
+[; <" PWM3DCL equ 0617h ;# ">
+"6762
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6762: __asm("PWM3DCH equ 0618h");
+[; <" PWM3DCH equ 0618h ;# ">
+"6832
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6832: __asm("PWM3CON equ 0619h");
+[; <" PWM3CON equ 0619h ;# ">
+"6837
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6837: __asm("PWM3CON0 equ 0619h");
+[; <" PWM3CON0 equ 0619h ;# ">
+"6898
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6898: __asm("PWM4DCL equ 061Ah");
+[; <" PWM4DCL equ 061Ah ;# ">
+"6934
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 6934: __asm("PWM4DCH equ 061Bh");
+[; <" PWM4DCH equ 061Bh ;# ">
+"7004
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7004: __asm("PWM4CON equ 061Ch");
+[; <" PWM4CON equ 061Ch ;# ">
+"7009
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7009: __asm("PWM4CON0 equ 061Ch");
+[; <" PWM4CON0 equ 061Ch ;# ">
+"7070
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7070: __asm("COG1PHR equ 0691h");
+[; <" COG1PHR equ 0691h ;# ">
+"7128
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7128: __asm("COG1PHF equ 0692h");
+[; <" COG1PHF equ 0692h ;# ">
+"7186
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7186: __asm("COG1BLKR equ 0693h");
+[; <" COG1BLKR equ 0693h ;# ">
+"7244
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7244: __asm("COG1BLKF equ 0694h");
+[; <" COG1BLKF equ 0694h ;# ">
+"7302
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7302: __asm("COG1DBR equ 0695h");
+[; <" COG1DBR equ 0695h ;# ">
+"7360
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7360: __asm("COG1DBF equ 0696h");
+[; <" COG1DBF equ 0696h ;# ">
+"7418
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7418: __asm("COG1CON0 equ 0697h");
+[; <" COG1CON0 equ 0697h ;# ">
+"7489
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7489: __asm("COG1CON1 equ 0698h");
+[; <" COG1CON1 equ 0698h ;# ">
+"7540
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7540: __asm("COG1RIS equ 0699h");
+[; <" COG1RIS equ 0699h ;# ">
+"7596
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7596: __asm("COG1RSIM equ 069Ah");
+[; <" COG1RSIM equ 069Ah ;# ">
+"7652
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7652: __asm("COG1FIS equ 069Bh");
+[; <" COG1FIS equ 069Bh ;# ">
+"7708
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7708: __asm("COG1FSIM equ 069Ch");
+[; <" COG1FSIM equ 069Ch ;# ">
+"7764
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7764: __asm("COG1ASD0 equ 069Dh");
+[; <" COG1ASD0 equ 069Dh ;# ">
+"7830
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7830: __asm("COG1ASD1 equ 069Eh");
+[; <" COG1ASD1 equ 069Eh ;# ">
+"7868
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7868: __asm("COG1STR equ 069Fh");
+[; <" COG1STR equ 069Fh ;# ">
+"7930
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7930: __asm("PPSLOCK equ 0E0Fh");
+[; <" PPSLOCK equ 0E0Fh ;# ">
+"7950
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7950: __asm("INTPPS equ 0E10h");
+[; <" INTPPS equ 0E10h ;# ">
+"7970
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7970: __asm("T0CKIPPS equ 0E11h");
+[; <" T0CKIPPS equ 0E11h ;# ">
+"7990
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 7990: __asm("T1CKIPPS equ 0E12h");
+[; <" T1CKIPPS equ 0E12h ;# ">
+"8010
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8010: __asm("T1GPPS equ 0E13h");
+[; <" T1GPPS equ 0E13h ;# ">
+"8030
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8030: __asm("CCP1PPS equ 0E14h");
+[; <" CCP1PPS equ 0E14h ;# ">
+"8050
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8050: __asm("CCP2PPS equ 0E15h");
+[; <" CCP2PPS equ 0E15h ;# ">
+"8070
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8070: __asm("COGINPPS equ 0E17h");
+[; <" COGINPPS equ 0E17h ;# ">
+"8090
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8090: __asm("SSPCLKPPS equ 0E20h");
+[; <" SSPCLKPPS equ 0E20h ;# ">
+"8110
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8110: __asm("SSPDATPPS equ 0E21h");
+[; <" SSPDATPPS equ 0E21h ;# ">
+"8130
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8130: __asm("SSPSSPPS equ 0E22h");
+[; <" SSPSSPPS equ 0E22h ;# ">
+"8150
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8150: __asm("RXPPS equ 0E24h");
+[; <" RXPPS equ 0E24h ;# ">
+"8170
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8170: __asm("CKPPS equ 0E25h");
+[; <" CKPPS equ 0E25h ;# ">
+"8190
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8190: __asm("CLCIN0PPS equ 0E28h");
+[; <" CLCIN0PPS equ 0E28h ;# ">
+"8210
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8210: __asm("CLCIN1PPS equ 0E29h");
+[; <" CLCIN1PPS equ 0E29h ;# ">
+"8230
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8230: __asm("CLCIN2PPS equ 0E2Ah");
+[; <" CLCIN2PPS equ 0E2Ah ;# ">
+"8250
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8250: __asm("CLCIN3PPS equ 0E2Bh");
+[; <" CLCIN3PPS equ 0E2Bh ;# ">
+"8270
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8270: __asm("RA0PPS equ 0E90h");
+[; <" RA0PPS equ 0E90h ;# ">
+"8290
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8290: __asm("RA1PPS equ 0E91h");
+[; <" RA1PPS equ 0E91h ;# ">
+"8310
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8310: __asm("RA2PPS equ 0E92h");
+[; <" RA2PPS equ 0E92h ;# ">
+"8330
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8330: __asm("RA4PPS equ 0E94h");
+[; <" RA4PPS equ 0E94h ;# ">
+"8350
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8350: __asm("RA5PPS equ 0E95h");
+[; <" RA5PPS equ 0E95h ;# ">
+"8370
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8370: __asm("RC0PPS equ 0EA0h");
+[; <" RC0PPS equ 0EA0h ;# ">
+"8390
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8390: __asm("RC1PPS equ 0EA1h");
+[; <" RC1PPS equ 0EA1h ;# ">
+"8410
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8410: __asm("RC2PPS equ 0EA2h");
+[; <" RC2PPS equ 0EA2h ;# ">
+"8430
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8430: __asm("RC3PPS equ 0EA3h");
+[; <" RC3PPS equ 0EA3h ;# ">
+"8450
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8450: __asm("RC4PPS equ 0EA4h");
+[; <" RC4PPS equ 0EA4h ;# ">
+"8470
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8470: __asm("RC5PPS equ 0EA5h");
+[; <" RC5PPS equ 0EA5h ;# ">
+"8490
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8490: __asm("CLCDATA equ 0F0Fh");
+[; <" CLCDATA equ 0F0Fh ;# ">
+"8522
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8522: __asm("CLC1CON equ 0F10h");
+[; <" CLC1CON equ 0F10h ;# ">
+"8640
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8640: __asm("CLC1POL equ 0F11h");
+[; <" CLC1POL equ 0F11h ;# ">
+"8718
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8718: __asm("CLC1SEL0 equ 0F12h");
+[; <" CLC1SEL0 equ 0F12h ;# ">
+"8810
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8810: __asm("CLC1SEL1 equ 0F13h");
+[; <" CLC1SEL1 equ 0F13h ;# ">
+"8902
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8902: __asm("CLC1SEL2 equ 0F14h");
+[; <" CLC1SEL2 equ 0F14h ;# ">
+"8994
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 8994: __asm("CLC1SEL3 equ 0F15h");
+[; <" CLC1SEL3 equ 0F15h ;# ">
+"9086
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 9086: __asm("CLC1GLS0 equ 0F16h");
+[; <" CLC1GLS0 equ 0F16h ;# ">
+"9198
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 9198: __asm("CLC1GLS1 equ 0F17h");
+[; <" CLC1GLS1 equ 0F17h ;# ">
+"9310
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 9310: __asm("CLC1GLS2 equ 0F18h");
+[; <" CLC1GLS2 equ 0F18h ;# ">
+"9422
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 9422: __asm("CLC1GLS3 equ 0F19h");
+[; <" CLC1GLS3 equ 0F19h ;# ">
+"9534
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 9534: __asm("CLC2CON equ 0F1Ah");
+[; <" CLC2CON equ 0F1Ah ;# ">
+"9652
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 9652: __asm("CLC2POL equ 0F1Bh");
+[; <" CLC2POL equ 0F1Bh ;# ">
+"9730
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 9730: __asm("CLC2SEL0 equ 0F1Ch");
+[; <" CLC2SEL0 equ 0F1Ch ;# ">
+"9822
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 9822: __asm("CLC2SEL1 equ 0F1Dh");
+[; <" CLC2SEL1 equ 0F1Dh ;# ">
+"9914
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 9914: __asm("CLC2SEL2 equ 0F1Eh");
+[; <" CLC2SEL2 equ 0F1Eh ;# ">
+"10006
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 10006: __asm("CLC2SEL3 equ 0F1Fh");
+[; <" CLC2SEL3 equ 0F1Fh ;# ">
+"10098
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 10098: __asm("CLC2GLS0 equ 0F20h");
+[; <" CLC2GLS0 equ 0F20h ;# ">
+"10210
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 10210: __asm("CLC2GLS1 equ 0F21h");
+[; <" CLC2GLS1 equ 0F21h ;# ">
+"10322
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 10322: __asm("CLC2GLS2 equ 0F22h");
+[; <" CLC2GLS2 equ 0F22h ;# ">
+"10434
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 10434: __asm("CLC2GLS3 equ 0F23h");
+[; <" CLC2GLS3 equ 0F23h ;# ">
+"10546
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 10546: __asm("CLC3CON equ 0F24h");
+[; <" CLC3CON equ 0F24h ;# ">
+"10664
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 10664: __asm("CLC3POL equ 0F25h");
+[; <" CLC3POL equ 0F25h ;# ">
+"10742
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 10742: __asm("CLC3SEL0 equ 0F26h");
+[; <" CLC3SEL0 equ 0F26h ;# ">
+"10834
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 10834: __asm("CLC3SEL1 equ 0F27h");
+[; <" CLC3SEL1 equ 0F27h ;# ">
+"10926
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 10926: __asm("CLC3SEL2 equ 0F28h");
+[; <" CLC3SEL2 equ 0F28h ;# ">
+"11018
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11018: __asm("CLC3SEL3 equ 0F29h");
+[; <" CLC3SEL3 equ 0F29h ;# ">
+"11110
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11110: __asm("CLC3GLS0 equ 0F2Ah");
+[; <" CLC3GLS0 equ 0F2Ah ;# ">
+"11222
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11222: __asm("CLC3GLS1 equ 0F2Bh");
+[; <" CLC3GLS1 equ 0F2Bh ;# ">
+"11334
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11334: __asm("CLC3GLS2 equ 0F2Ch");
+[; <" CLC3GLS2 equ 0F2Ch ;# ">
+"11446
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11446: __asm("CLC3GLS3 equ 0F2Dh");
+[; <" CLC3GLS3 equ 0F2Dh ;# ">
+"11558
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11558: __asm("ICDBK0H equ 0F9Eh");
+[; <" ICDBK0H equ 0F9Eh ;# ">
+"11614
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11614: __asm("STATUS_SHAD equ 0FE4h");
+[; <" STATUS_SHAD equ 0FE4h ;# ">
+"11646
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11646: __asm("WREG_SHAD equ 0FE5h");
+[; <" WREG_SHAD equ 0FE5h ;# ">
+"11666
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11666: __asm("BSR_SHAD equ 0FE6h");
+[; <" BSR_SHAD equ 0FE6h ;# ">
+"11686
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11686: __asm("PCLATH_SHAD equ 0FE7h");
+[; <" PCLATH_SHAD equ 0FE7h ;# ">
+"11706
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11706: __asm("FSR0L_SHAD equ 0FE8h");
+[; <" FSR0L_SHAD equ 0FE8h ;# ">
+"11726
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11726: __asm("FSR0H_SHAD equ 0FE9h");
+[; <" FSR0H_SHAD equ 0FE9h ;# ">
+"11746
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11746: __asm("FSR1L_SHAD equ 0FEAh");
+[; <" FSR1L_SHAD equ 0FEAh ;# ">
+"11766
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11766: __asm("FSR1H_SHAD equ 0FEBh");
+[; <" FSR1H_SHAD equ 0FEBh ;# ">
+"11786
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11786: __asm("STKPTR equ 0FEDh");
+[; <" STKPTR equ 0FEDh ;# ">
+"11806
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11806: __asm("TOSL equ 0FEEh");
+[; <" TOSL equ 0FEEh ;# ">
+"11826
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1705.h: 11826: __asm("TOSH equ 0FEFh");
+[; <" TOSH equ 0FEFh ;# ">
+"60 SerialBase.c
+[; ;SerialBase.c: 60: const unsigned char msghi[] = "Hi!\r\n";
+[v _msghi `Cuc ~T0 @X0 -> 6 `i e ]
+[i _msghi
+:U ..
+-> 72 `c
+-> 105 `c
+-> 33 `c
+-> 13 `c
+-> 10 `c
+-> 0 `c
+..
+]
+"71
+[; ;SerialBase.c: 71: unsigned char Index,Tindex,Sending;
+[v _Index `uc ~T0 @X0 1 e ]
+[v _Tindex `uc ~T0 @X0 1 e ]
+[v _Sending `uc ~T0 @X0 1 e ]
+"72
+[; ;SerialBase.c: 72: unsigned char RcvFlag,TxFlag;
+[v _RcvFlag `uc ~T0 @X0 1 e ]
+[v _TxFlag `uc ~T0 @X0 1 e ]
+"73
+[; ;SerialBase.c: 73: unsigned char RcvBuf[32];
+[v _RcvBuf `uc ~T0 @X0 -> 32 `i e ]
+"74
+[; ;SerialBase.c: 74: unsigned char SndBuf[32];
+[v _SndBuf `uc ~T0 @X0 -> 32 `i e ]
+"75
+[; ;SerialBase.c: 75: unsigned char SBuff[32] ;
+[v _SBuff `uc ~T0 @X0 -> 32 `i e ]
+"76
+[; ;SerialBase.c: 76: unsigned char Buffer[32];
+[v _Buffer `uc ~T0 @X0 -> 32 `i e ]
+"78
+[; ;SerialBase.c: 78: unsigned char echoFLG;
+[v _echoFLG `uc ~T0 @X0 1 e ]
+[v $root$_isr `(v ~T0 @X0 0 e ]
+"83
+[; ;SerialBase.c: 83: void __attribute__((picinterrupt(("")))) isr(void) {
+[v _isr `(v ~T1 @X0 1 ef ]
+{
+[e :U _isr ]
+[f ]
+"84
+[; ;SerialBase.c: 84:     unsigned char data;
+[v _data `uc ~T0 @X0 1 a ]
+"86
+[; ;SerialBase.c: 86:     if(PIR1bits.RCIF) {
+[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 592  ]
+{
+"87
+[; ;SerialBase.c: 87:         PIR1bits.RCIF = 0;
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+"88
+[; ;SerialBase.c: 88:         if((RC1STAbits.OERR) || (RC1STAbits.FERR)){
+[e $ ! || != -> . . _RC1STAbits 0 1 `i -> 0 `i != -> . . _RC1STAbits 0 2 `i -> 0 `i 593  ]
+{
+"89
+[; ;SerialBase.c: 89:             data = RC1REG;
+[e = _data _RC1REG ]
+"90
+[; ;SerialBase.c: 90:             RC1STA = 0;
+[e = _RC1STA -> -> 0 `i `uc ]
+"91
+[; ;SerialBase.c: 91:             RC1STA = 0x90;
+[e = _RC1STA -> -> 144 `i `uc ]
+"92
+[; ;SerialBase.c: 92:         } else {
+}
+[e $U 594  ]
+[e :U 593 ]
+{
+"93
+[; ;SerialBase.c: 93:             data = RC1REG;
+[e = _data _RC1REG ]
+"95
+[; ;SerialBase.c: 95:             if(Index < 32) {
+[e $ ! < -> _Index `i -> 32 `i 595  ]
+{
+"96
+[; ;SerialBase.c: 96:                 RcvBuf[Index] = data;
+[e = *U + &U _RcvBuf * -> _Index `ux -> -> # *U &U _RcvBuf `ui `ux _data ]
+"97
+[; ;SerialBase.c: 97:                 Index++;
+[e ++ _Index -> -> 1 `i `uc ]
+"98
+[; ;SerialBase.c: 98:             } else {
+}
+[e $U 596  ]
+[e :U 595 ]
+{
+"99
+[; ;SerialBase.c: 99:                 Index = 0;
+[e = _Index -> -> 0 `i `uc ]
+"100
+[; ;SerialBase.c: 100:                 RcvBuf[Index] = data;
+[e = *U + &U _RcvBuf * -> _Index `ux -> -> # *U &U _RcvBuf `ui `ux _data ]
+"101
+[; ;SerialBase.c: 101:                 Index++;
+[e ++ _Index -> -> 1 `i `uc ]
+"102
+[; ;SerialBase.c: 102:             }
+}
+[e :U 596 ]
+"103
+[; ;SerialBase.c: 103:    if(echoFLG) {
+[e $ ! != -> _echoFLG `i -> 0 `i 597  ]
+{
+"104
+[; ;SerialBase.c: 104:     Send(data);
+[e ( _Send (1 _data ]
+"105
+[; ;SerialBase.c: 105:     if(data == '\b' && Index != 0) {
+[e $ ! && == -> _data `ui -> 8 `ui != -> _Index `i -> 0 `i 598  ]
+{
+"106
+[; ;SerialBase.c: 106:      if(Index == 1) Index = 0;
+[e $ ! == -> _Index `i -> 1 `i 599  ]
+[e = _Index -> -> 0 `i `uc ]
+[e $U 600  ]
+"107
+[; ;SerialBase.c: 107:      else Index -= 2;
+[e :U 599 ]
+[e =- _Index -> -> 2 `i `uc ]
+[e :U 600 ]
+"108
+[; ;SerialBase.c: 108:     }
+}
+[e :U 598 ]
+"109
+[; ;SerialBase.c: 109:    }
+}
+[e :U 597 ]
+"110
+[; ;SerialBase.c: 110:             if(data == '\r' || data == '\n' ) {
+[e $ ! || == -> _data `ui -> 13 `ui == -> _data `ui -> 10 `ui 601  ]
+{
+"111
+[; ;SerialBase.c: 111:     RcvFlag = 1;
+[e = _RcvFlag -> -> 1 `i `uc ]
+"112
+[; ;SerialBase.c: 112:     if(echoFLG) (Send('\r'),Send('\n'));
+[e $ ! != -> _echoFLG `i -> 0 `i 602  ]
+[e ; ( _Send (1 -> -> 13 `ui `uc ( _Send (1 -> -> 10 `ui `uc ]
+[e :U 602 ]
+"113
+[; ;SerialBase.c: 113:    }
+}
+[e :U 601 ]
+"114
+[; ;SerialBase.c: 114:         }
+}
+[e :U 594 ]
+"115
+[; ;SerialBase.c: 115:     }
+}
+[e :U 592 ]
+"116
+[; ;SerialBase.c: 116: }
+[e :UE 591 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"120
+[; ;SerialBase.c: 120: int main(void) {
+[v _main `(i ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"121
+[; ;SerialBase.c: 121:     char bring = 1;
+[v _bring `uc ~T0 @X0 1 a ]
+[e = _bring -> -> 1 `i `uc ]
+"122
+[; ;SerialBase.c: 122:     unsigned int loop=30000;
+[v _loop `ui ~T0 @X0 1 a ]
+[e = _loop -> -> 30000 `i `ui ]
+"124
+[; ;SerialBase.c: 124:     OSCCON = 0xF0;
+[e = _OSCCON -> -> 240 `i `uc ]
+"126
+[; ;SerialBase.c: 126:     ANSELA = 0x00;
+[e = _ANSELA -> -> 0 `i `uc ]
+"127
+[; ;SerialBase.c: 127:     ANSELC = 0x00;
+[e = _ANSELC -> -> 0 `i `uc ]
+"128
+[; ;SerialBase.c: 128:     TRISA = 0xFF;
+[e = _TRISA -> -> 255 `i `uc ]
+"129
+[; ;SerialBase.c: 129:     TRISC = 0xF7;
+[e = _TRISC -> -> 247 `i `uc ]
+"130
+[; ;SerialBase.c: 130:     WPUA = 0x3F;
+[e = _WPUA -> -> 63 `i `uc ]
+"131
+[; ;SerialBase.c: 131:     WPUC = 0x0F;
+[e = _WPUC -> -> 15 `i `uc ]
+"134
+[; ;SerialBase.c: 134:     RC4PPS = 0b00010100;
+[e = _RC4PPS -> -> 20 `i `uc ]
+"135
+[; ;SerialBase.c: 135:     RXPPS = 0b00010101;
+[e = _RXPPS -> -> 21 `i `uc ]
+"136
+[; ;SerialBase.c: 136:     RC0PPS = 0b00010000;
+[e = _RC0PPS -> -> 16 `i `uc ]
+"137
+[; ;SerialBase.c: 137:     RC1PPS = 0b00010001;
+[e = _RC1PPS -> -> 17 `i `uc ]
+"140
+[; ;SerialBase.c: 140:     TX1STA = 0x24;
+[e = _TX1STA -> -> 36 `i `uc ]
+"141
+[; ;SerialBase.c: 141:     RC1STA = 0x90;
+[e = _RC1STA -> -> 144 `i `uc ]
+"142
+[; ;SerialBase.c: 142:     BAUD1CON= 0x08;
+[e = _BAUD1CON -> -> 8 `i `uc ]
+"143
+[; ;SerialBase.c: 143:     SP1BRG = 68;
+[e = _SP1BRG -> -> 68 `i `us ]
+"145
+[; ;SerialBase.c: 145:     Tindex = 0;
+[e = _Tindex -> -> 0 `i `uc ]
+"146
+[; ;SerialBase.c: 146:     Sending = 0;
+[e = _Sending -> -> 0 `i `uc ]
+"147
+[; ;SerialBase.c: 147:     TxFlag = 0;
+[e = _TxFlag -> -> 0 `i `uc ]
+"150
+[; ;SerialBase.c: 150:     WDTCON = 0x16;
+[e = _WDTCON -> -> 22 `i `uc ]
+"151
+[; ;SerialBase.c: 151:     __asm("clrwdt");
+[; <" clrwdt ;# ">
+"153
+[; ;SerialBase.c: 153:     Index = 0;
+[e = _Index -> -> 0 `i `uc ]
+"154
+[; ;SerialBase.c: 154:     RcvFlag = 0;
+[e = _RcvFlag -> -> 0 `i `uc ]
+"156
+[; ;SerialBase.c: 156:     PIR1bits.RCIF = 0;
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+"157
+[; ;SerialBase.c: 157:     PIE1bits.RCIE = 1;
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+"158
+[; ;SerialBase.c: 158:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+"159
+[; ;SerialBase.c: 159:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"161
+[; ;SerialBase.c: 161:       initI2C(0);
+[e ( _initI2C (1 -> -> 0 `i `uc ]
+"164
+[; ;SerialBase.c: 164:     _delay((unsigned long)((100)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"165
+[; ;SerialBase.c: 165:  echoFLG = 0;
+[e = _echoFLG -> -> 0 `i `uc ]
+"169
+[; ;SerialBase.c: 169:     _delay((unsigned long)((100)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"175
+[; ;SerialBase.c: 175:     (copyConstStr(msghi,SndBuf),SendStr());
+[e ; ( _copyConstStr (2 , &U _msghi &U _SndBuf ( _SendStr ..  ]
+"177
+[; ;SerialBase.c: 177:     while(1) {
+[e :U 605 ]
+{
+"178
+[; ;SerialBase.c: 178:         __asm("clrwdt");
+[; <" clrwdt ;# ">
+"179
+[; ;SerialBase.c: 179:         if(++loop >= 30000) {
+[e $ ! >= =+ _loop -> -> 1 `i `ui -> -> 30000 `i `ui 607  ]
+{
+"180
+[; ;SerialBase.c: 180:             PORTCbits.RC3 = bring;
+[e = . . _PORTCbits 0 3 -> _bring `uc ]
+"181
+[; ;SerialBase.c: 181:             bring = 1 - bring;
+[e = _bring -> - -> 1 `i -> _bring `i `uc ]
+"182
+[; ;SerialBase.c: 182:             loop=0;
+[e = _loop -> -> 0 `i `ui ]
+"183
+[; ;SerialBase.c: 183:         }
+}
+[e :U 607 ]
+"184
+[; ;SerialBase.c: 184:         trySend();
+[e ( _trySend ..  ]
+"185
+[; ;SerialBase.c: 185:         if(RcvFlag) {
+[e $ ! != -> _RcvFlag `i -> 0 `i 608  ]
+{
+"186
+[; ;SerialBase.c: 186:    copyBuffer();
+[e ( _copyBuffer ..  ]
+"187
+[; ;SerialBase.c: 187:    parseCommand();
+[e ( _parseCommand ..  ]
+"188
+[; ;SerialBase.c: 188:    RcvFlag = 0;
+[e = _RcvFlag -> -> 0 `i `uc ]
+"189
+[; ;SerialBase.c: 189:         }
+}
+[e :U 608 ]
+"190
+[; ;SerialBase.c: 190:     }
+}
+[e :U 604 ]
+[e $U 605  ]
+[e :U 606 ]
+"191
+[; ;SerialBase.c: 191:     return 0;
+[e ) -> 0 `i ]
+[e $UE 603  ]
+"192
+[; ;SerialBase.c: 192: }
+[e :UE 603 ]
+}
+"194
+[; ;SerialBase.c: 194: void copyBuffer() {
+[v _copyBuffer `(v ~T0 @X0 1 ef ]
+{
+[e :U _copyBuffer ]
+[f ]
+"195
+[; ;SerialBase.c: 195:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+"196
+[; ;SerialBase.c: 196:     unsigned char *p = RcvBuf;
+[v _p `*uc ~T0 @X0 1 a ]
+[e = _p &U _RcvBuf ]
+"197
+[; ;SerialBase.c: 197:     unsigned char *q = Buffer;
+[v _q `*uc ~T0 @X0 1 a ]
+[e = _q &U _Buffer ]
+"198
+[; ;SerialBase.c: 198:     while(Index) {
+[e $U 610  ]
+[e :U 611 ]
+{
+"199
+[; ;SerialBase.c: 199:         *q++ = *p++;
+[e = *U ++ _q * -> -> 1 `i `x -> -> # *U _q `i `x *U ++ _p * -> -> 1 `i `x -> -> # *U _p `i `x ]
+"200
+[; ;SerialBase.c: 200:         Index --;
+[e -- _Index -> -> 1 `i `uc ]
+"201
+[; ;SerialBase.c: 201:     }
+}
+[e :U 610 ]
+"198
+[; ;SerialBase.c: 198:     while(Index) {
+[e $ != -> _Index `i -> 0 `i 611  ]
+[e :U 612 ]
+"202
+[; ;SerialBase.c: 202:     *q = '\0';
+[e = *U _q -> -> 0 `ui `uc ]
+"203
+[; ;SerialBase.c: 203:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"204
+[; ;SerialBase.c: 204: }
+[e :UE 609 ]
+}
+"206
+[; ;SerialBase.c: 206: void doSend() {
+[v _doSend `(v ~T0 @X0 1 ef ]
+{
+[e :U _doSend ]
+[f ]
+"207
+[; ;SerialBase.c: 207:     if(TxFlag) {
+[e $ ! != -> _TxFlag `i -> 0 `i 614  ]
+{
+"208
+[; ;SerialBase.c: 208:         while(!TX1STAbits.TRMT);
+[e $U 615  ]
+[e :U 616 ]
+[e :U 615 ]
+[e $ ! != -> . . _TX1STAbits 0 1 `i -> 0 `i 616  ]
+[e :U 617 ]
+"209
+[; ;SerialBase.c: 209:         TX1REG = QueOut();
+[e = _TX1REG ( _QueOut ..  ]
+"210
+[; ;SerialBase.c: 210:     }
+}
+[e :U 614 ]
+"211
+[; ;SerialBase.c: 211: }
+[e :UE 613 ]
+}
+"213
+[; ;SerialBase.c: 213: void trySend() {
+[v _trySend `(v ~T0 @X0 1 ef ]
+{
+[e :U _trySend ]
+[f ]
+"214
+[; ;SerialBase.c: 214:     if(TxFlag && TX1STAbits.TRMT) TX1REG = QueOut();
+[e $ ! && != -> _TxFlag `i -> 0 `i != -> . . _TX1STAbits 0 1 `i -> 0 `i 619  ]
+[e = _TX1REG ( _QueOut ..  ]
+[e :U 619 ]
+"215
+[; ;SerialBase.c: 215: }
+[e :UE 618 ]
+}
+"217
+[; ;SerialBase.c: 217: char QueIn(unsigned char c) {
+[v _QueIn `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _QueIn ]
+[v _c `uc ~T0 @X0 1 r1 ]
+[f ]
+"218
+[; ;SerialBase.c: 218:     if(TxFlag >= 32) return 0;
+[e $ ! >= -> _TxFlag `i -> 32 `i 621  ]
+[e ) -> -> 0 `i `uc ]
+[e $UE 620  ]
+[e :U 621 ]
+"219
+[; ;SerialBase.c: 219:     SBuff[Tindex++] = c;
+[e = *U + &U _SBuff * -> ++ _Tindex -> -> 1 `i `uc `ux -> -> # *U &U _SBuff `ui `ux _c ]
+"220
+[; ;SerialBase.c: 220:     if(Tindex >= 32) Tindex = 0;
+[e $ ! >= -> _Tindex `i -> 32 `i 622  ]
+[e = _Tindex -> -> 0 `i `uc ]
+[e :U 622 ]
+"221
+[; ;SerialBase.c: 221:     TxFlag++;
+[e ++ _TxFlag -> -> 1 `i `uc ]
+"222
+[; ;SerialBase.c: 222:     return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 620  ]
+"223
+[; ;SerialBase.c: 223: }
+[e :UE 620 ]
+}
+"225
+[; ;SerialBase.c: 225: unsigned char QueOut() {
+[v _QueOut `(uc ~T0 @X0 1 ef ]
+{
+[e :U _QueOut ]
+[f ]
+"226
+[; ;SerialBase.c: 226:     unsigned char c = SBuff[Sending++];
+[v _c `uc ~T0 @X0 1 a ]
+[e = _c *U + &U _SBuff * -> ++ _Sending -> -> 1 `i `uc `ux -> -> # *U &U _SBuff `ui `ux ]
+"227
+[; ;SerialBase.c: 227:     if(Sending >= 32) Sending = 0;
+[e $ ! >= -> _Sending `i -> 32 `i 624  ]
+[e = _Sending -> -> 0 `i `uc ]
+[e :U 624 ]
+"228
+[; ;SerialBase.c: 228:     TxFlag --;
+[e -- _TxFlag -> -> 1 `i `uc ]
+"229
+[; ;SerialBase.c: 229:     return c;
+[e ) _c ]
+[e $UE 623  ]
+"230
+[; ;SerialBase.c: 230: }
+[e :UE 623 ]
+}
+"232
+[; ;SerialBase.c: 232: void Send(unsigned char txchar) {
+[v _Send `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _Send ]
+[v _txchar `uc ~T0 @X0 1 r1 ]
+[f ]
+"233
+[; ;SerialBase.c: 233:     if(TxFlag == 0) {
+[e $ ! == -> _TxFlag `i -> 0 `i 626  ]
+{
+"234
+[; ;SerialBase.c: 234:         if(TX1STAbits.TRMT) TX1REG = txchar;
+[e $ ! != -> . . _TX1STAbits 0 1 `i -> 0 `i 627  ]
+[e = _TX1REG _txchar ]
+[e $U 628  ]
+"235
+[; ;SerialBase.c: 235:         else {
+[e :U 627 ]
+{
+"236
+[; ;SerialBase.c: 236:             Sending = Tindex = 0;
+[e = _Sending = _Tindex -> -> 0 `i `uc ]
+"237
+[; ;SerialBase.c: 237:             SBuff[Tindex++] = txchar;
+[e = *U + &U _SBuff * -> ++ _Tindex -> -> 1 `i `uc `ux -> -> # *U &U _SBuff `ui `ux _txchar ]
+"238
+[; ;SerialBase.c: 238:             TxFlag = 1;
+[e = _TxFlag -> -> 1 `i `uc ]
+"239
+[; ;SerialBase.c: 239:         }
+}
+[e :U 628 ]
+"240
+[; ;SerialBase.c: 240:     } else {
+}
+[e $U 629  ]
+[e :U 626 ]
+{
+"241
+[; ;SerialBase.c: 241:         if(! QueIn(txchar)) {
+[e $ ! ! != -> ( _QueIn (1 _txchar `i -> 0 `i 630  ]
+{
+"242
+[; ;SerialBase.c: 242:             while(!TX1STAbits.TRMT);
+[e $U 631  ]
+[e :U 632 ]
+[e :U 631 ]
+[e $ ! != -> . . _TX1STAbits 0 1 `i -> 0 `i 632  ]
+[e :U 633 ]
+"243
+[; ;SerialBase.c: 243:             TX1REG = QueOut();
+[e = _TX1REG ( _QueOut ..  ]
+"244
+[; ;SerialBase.c: 244:             QueIn(txchar);
+[e ( _QueIn (1 _txchar ]
+"245
+[; ;SerialBase.c: 245:         }
+}
+[e :U 630 ]
+"246
+[; ;SerialBase.c: 246:         if(TX1STAbits.TRMT) TX1REG = QueOut();
+[e $ ! != -> . . _TX1STAbits 0 1 `i -> 0 `i 634  ]
+[e = _TX1REG ( _QueOut ..  ]
+[e :U 634 ]
+"247
+[; ;SerialBase.c: 247:     }
+}
+[e :U 629 ]
+"250
+[; ;SerialBase.c: 250: }
+[e :UE 625 ]
+}
+"252
+[; ;SerialBase.c: 252: void SendStr() {
+[v _SendStr `(v ~T0 @X0 1 ef ]
+{
+[e :U _SendStr ]
+[f ]
+"253
+[; ;SerialBase.c: 253:     unsigned char *str=SndBuf;
+[v _str `*uc ~T0 @X0 1 a ]
+[e = _str &U _SndBuf ]
+"254
+[; ;SerialBase.c: 254:     char i = 32;
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 32 `i `uc ]
+"255
+[; ;SerialBase.c: 255:     while(i > 0 && *str != '\0') {
+[e $U 636  ]
+[e :U 637 ]
+{
+"256
+[; ;SerialBase.c: 256:         Send(*str);
+[e ( _Send (1 *U _str ]
+"257
+[; ;SerialBase.c: 257:         str++;
+[e ++ _str * -> -> 1 `i `x -> -> # *U _str `i `x ]
+"258
+[; ;SerialBase.c: 258:         i--;
+[e -- _i -> -> 1 `i `uc ]
+"259
+[; ;SerialBase.c: 259:     }
+}
+[e :U 636 ]
+"255
+[; ;SerialBase.c: 255:     while(i > 0 && *str != '\0') {
+[e $ && > -> _i `i -> 0 `i != -> *U _str `ui -> 0 `ui 637  ]
+[e :U 638 ]
+"260
+[; ;SerialBase.c: 260: }
+[e :UE 635 ]
+}
+"262
+[; ;SerialBase.c: 262: void sndStr(unsigned char *p) {
+[v _sndStr `(v ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _sndStr ]
+[v _p `*uc ~T0 @X0 1 r1 ]
+[f ]
+"263
+[; ;SerialBase.c: 263:  unsigned char *q = SndBuf;
+[v _q `*uc ~T0 @X0 1 a ]
+[e = _q &U _SndBuf ]
+"264
+[; ;SerialBase.c: 264:  while(*p) *q++ = *p++;
+[e $U 640  ]
+[e :U 641 ]
+[e = *U ++ _q * -> -> 1 `i `x -> -> # *U _q `i `x *U ++ _p * -> -> 1 `i `x -> -> # *U _p `i `x ]
+[e :U 640 ]
+[e $ != -> *U _p `i -> 0 `i 641  ]
+[e :U 642 ]
+"265
+[; ;SerialBase.c: 265:  *q = '\0';
+[e = *U _q -> -> 0 `ui `uc ]
+"266
+[; ;SerialBase.c: 266:  SendStr();
+[e ( _SendStr ..  ]
+"267
+[; ;SerialBase.c: 267: }
+[e :UE 639 ]
+}
+"269
+[; ;SerialBase.c: 269: void SendHex(unsigned char b) {
+[v _SendHex `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _SendHex ]
+[v _b `uc ~T0 @X0 1 r1 ]
+[f ]
+"270
+[; ;SerialBase.c: 270:     unsigned char c = b >> 4;
+[v _c `uc ~T0 @X0 1 a ]
+[e = _c -> >> -> _b `i -> 4 `i `uc ]
+"271
+[; ;SerialBase.c: 271:     if(c <= 9) c += '0';
+[e $ ! <= -> _c `i -> 9 `i 644  ]
+[e =+ _c -> -> 48 `ui `uc ]
+[e $U 645  ]
+"272
+[; ;SerialBase.c: 272:     else c += 'A' - 10;
+[e :U 644 ]
+[e =+ _c -> - -> 65 `ui -> -> 10 `i `ui `uc ]
+[e :U 645 ]
+"273
+[; ;SerialBase.c: 273:     Send(c);
+[e ( _Send (1 _c ]
+"274
+[; ;SerialBase.c: 274:     c = b & 0x0f;
+[e = _c -> & -> _b `i -> 15 `i `uc ]
+"275
+[; ;SerialBase.c: 275:     if(c <= 9) c += '0';
+[e $ ! <= -> _c `i -> 9 `i 646  ]
+[e =+ _c -> -> 48 `ui `uc ]
+[e $U 647  ]
+"276
+[; ;SerialBase.c: 276:     else c += 'A' - 10;
+[e :U 646 ]
+[e =+ _c -> - -> 65 `ui -> -> 10 `i `ui `uc ]
+[e :U 647 ]
+"277
+[; ;SerialBase.c: 277:     Send(c);
+[e ( _Send (1 _c ]
+"278
+[; ;SerialBase.c: 278: }
+[e :UE 643 ]
+}
+"280
+[; ;SerialBase.c: 280: void copyConstStr(const unsigned char *src, unsigned char * dst) {
+[v _copyConstStr `(v ~T0 @X0 1 ef2`*Cuc`*uc ]
+{
+[e :U _copyConstStr ]
+[v _src `*Cuc ~T0 @X0 1 r1 ]
+[v _dst `*uc ~T0 @X0 1 r2 ]
+[f ]
+"281
+[; ;SerialBase.c: 281:     while(*src) {
+[e $U 649  ]
+[e :U 650 ]
+{
+"282
+[; ;SerialBase.c: 282:         *dst++ = *src++;
+[e = *U ++ _dst * -> -> 1 `i `x -> -> # *U _dst `i `x *U ++ _src * -> -> 1 `i `x -> -> # *U _src `i `x ]
+"283
+[; ;SerialBase.c: 283:     }
+}
+[e :U 649 ]
+"281
+[; ;SerialBase.c: 281:     while(*src) {
+[e $ != -> *U _src `i -> 0 `i 650  ]
+[e :U 651 ]
+"284
+[; ;SerialBase.c: 284:     *dst = '\0';
+[e = *U _dst -> -> 0 `ui `uc ]
+"285
+[; ;SerialBase.c: 285: }
+[e :UE 648 ]
+}
+"287
+[; ;SerialBase.c: 287: const unsigned char base64chars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+[v _base64chars `Cuc ~T0 @X0 -> 65 `i e ]
+[i _base64chars
+:U ..
+-> 65 `c
+-> 66 `c
+-> 67 `c
+-> 68 `c
+-> 69 `c
+-> 70 `c
+-> 71 `c
+-> 72 `c
+-> 73 `c
+-> 74 `c
+-> 75 `c
+-> 76 `c
+-> 77 `c
+-> 78 `c
+-> 79 `c
+-> 80 `c
+-> 81 `c
+-> 82 `c
+-> 83 `c
+-> 84 `c
+-> 85 `c
+-> 86 `c
+-> 87 `c
+-> 88 `c
+-> 89 `c
+-> 90 `c
+-> 97 `c
+-> 98 `c
+-> 99 `c
+-> 100 `c
+-> 101 `c
+-> 102 `c
+-> 103 `c
+-> 104 `c
+-> 105 `c
+-> 106 `c
+-> 107 `c
+-> 108 `c
+-> 109 `c
+-> 110 `c
+-> 111 `c
+-> 112 `c
+-> 113 `c
+-> 114 `c
+-> 115 `c
+-> 116 `c
+-> 117 `c
+-> 118 `c
+-> 119 `c
+-> 120 `c
+-> 121 `c
+-> 122 `c
+-> 48 `c
+-> 49 `c
+-> 50 `c
+-> 51 `c
+-> 52 `c
+-> 53 `c
+-> 54 `c
+-> 55 `c
+-> 56 `c
+-> 57 `c
+-> 43 `c
+-> 47 `c
+-> 0 `c
+..
+]
+"289
+[; ;SerialBase.c: 289: void encodeBase64(unsigned char *src,unsigned char n,unsigned char *dst ) {
+[v _encodeBase64 `(v ~T0 @X0 1 ef3`*uc`uc`*uc ]
+{
+[e :U _encodeBase64 ]
+[v _src `*uc ~T0 @X0 1 r1 ]
+[v _n `uc ~T0 @X0 1 r2 ]
+[v _dst `*uc ~T0 @X0 1 r3 ]
+[f ]
+"290
+[; ;SerialBase.c: 290:     unsigned char ph = 0;
+[v _ph `uc ~T0 @X0 1 a ]
+[e = _ph -> -> 0 `i `uc ]
+"291
+[; ;SerialBase.c: 291:     unsigned char c;
+[v _c `uc ~T0 @X0 1 a ]
+"292
+[; ;SerialBase.c: 292:     unsigned short d = 0;
+[v _d `us ~T0 @X0 1 a ]
+[e = _d -> -> 0 `i `us ]
+"293
+[; ;SerialBase.c: 293:     while(n > 0) {
+[e $U 653  ]
+[e :U 654 ]
+{
+"294
+[; ;SerialBase.c: 294:         d |= *src++;
+[e =| _d -> *U ++ _src * -> -> 1 `i `x -> -> # *U _src `i `x `us ]
+"295
+[; ;SerialBase.c: 295:         n--;
+[e -- _n -> -> 1 `i `uc ]
+"296
+[; ;SerialBase.c: 296:         switch(ph) {
+[e $U 657  ]
+{
+"297
+[; ;SerialBase.c: 297:         case 0:
+[e :U 658 ]
+"298
+[; ;SerialBase.c: 298:             c = d >> 2;
+[e = _c -> >> -> _d `ui -> 2 `i `uc ]
+"299
+[; ;SerialBase.c: 299:             d <<= 8;
+[e =<< _d -> -> 8 `i `us ]
+"300
+[; ;SerialBase.c: 300:             d &= 0x0300;
+[e =& _d -> -> 768 `i `us ]
+"301
+[; ;SerialBase.c: 301:             ph++;
+[e ++ _ph -> -> 1 `i `uc ]
+"302
+[; ;SerialBase.c: 302:             break;
+[e $U 656  ]
+"303
+[; ;SerialBase.c: 303:         case 1:
+[e :U 659 ]
+"304
+[; ;SerialBase.c: 304:             c = d >> 4;
+[e = _c -> >> -> _d `ui -> 4 `i `uc ]
+"305
+[; ;SerialBase.c: 305:             d <<= 8;
+[e =<< _d -> -> 8 `i `us ]
+"306
+[; ;SerialBase.c: 306:             d &= 0x0f00;
+[e =& _d -> -> 3840 `i `us ]
+"307
+[; ;SerialBase.c: 307:             ph++;
+[e ++ _ph -> -> 1 `i `uc ]
+"308
+[; ;SerialBase.c: 308:             break;
+[e $U 656  ]
+"309
+[; ;SerialBase.c: 309:         case 2:
+[e :U 660 ]
+"310
+[; ;SerialBase.c: 310:             c = d >> 6;
+[e = _c -> >> -> _d `ui -> 6 `i `uc ]
+"311
+[; ;SerialBase.c: 311:             d &= 0x003f;
+[e =& _d -> -> 63 `i `us ]
+"312
+[; ;SerialBase.c: 312:             *dst++ = base64chars[c];
+[e = *U ++ _dst * -> -> 1 `i `x -> -> # *U _dst `i `x *U + &U _base64chars * -> _c `ux -> -> # *U &U _base64chars `ui `ux ]
+"313
+[; ;SerialBase.c: 313:             c = d;
+[e = _c -> _d `uc ]
+"314
+[; ;SerialBase.c: 314:             d = 0;
+[e = _d -> -> 0 `i `us ]
+"315
+[; ;SerialBase.c: 315:             ph = 0;
+[e = _ph -> -> 0 `i `uc ]
+"316
+[; ;SerialBase.c: 316:             break;
+[e $U 656  ]
+"317
+[; ;SerialBase.c: 317:         default:
+[e :U 661 ]
+"318
+[; ;SerialBase.c: 318:             break;
+[e $U 656  ]
+"319
+[; ;SerialBase.c: 319:         }
+}
+[e $U 656  ]
+[e :U 657 ]
+[e [\ -> _ph `i , $ -> 0 `i 658
+ , $ -> 1 `i 659
+ , $ -> 2 `i 660
+ 661 ]
+[e :U 656 ]
+"320
+[; ;SerialBase.c: 320:         *dst++ = base64chars[c];
+[e = *U ++ _dst * -> -> 1 `i `x -> -> # *U _dst `i `x *U + &U _base64chars * -> _c `ux -> -> # *U &U _base64chars `ui `ux ]
+"321
+[; ;SerialBase.c: 321:     }
+}
+[e :U 653 ]
+"293
+[; ;SerialBase.c: 293:     while(n > 0) {
+[e $ > -> _n `i -> 0 `i 654  ]
+[e :U 655 ]
+"322
+[; ;SerialBase.c: 322:     switch(ph) {
+[e $U 663  ]
+{
+"323
+[; ;SerialBase.c: 323:     case 0:
+[e :U 664 ]
+"324
+[; ;SerialBase.c: 324:         break;
+[e $U 662  ]
+"325
+[; ;SerialBase.c: 325:     case 1:
+[e :U 665 ]
+"326
+[; ;SerialBase.c: 326:         c = d >> 4;
+[e = _c -> >> -> _d `ui -> 4 `i `uc ]
+"327
+[; ;SerialBase.c: 327:         *dst++ = base64chars[c];
+[e = *U ++ _dst * -> -> 1 `i `x -> -> # *U _dst `i `x *U + &U _base64chars * -> _c `ux -> -> # *U &U _base64chars `ui `ux ]
+"328
+[; ;SerialBase.c: 328:         *dst++ = '=';
+[e = *U ++ _dst * -> -> 1 `i `x -> -> # *U _dst `i `x -> -> 61 `ui `uc ]
+"329
+[; ;SerialBase.c: 329:         *dst++ = '=';
+[e = *U ++ _dst * -> -> 1 `i `x -> -> # *U _dst `i `x -> -> 61 `ui `uc ]
+"330
+[; ;SerialBase.c: 330:         break;
+[e $U 662  ]
+"332
+[; ;SerialBase.c: 332:     case 2:
+[e :U 666 ]
+"333
+[; ;SerialBase.c: 333:         c = d >> 6;
+[e = _c -> >> -> _d `ui -> 6 `i `uc ]
+"334
+[; ;SerialBase.c: 334:         *dst++ = base64chars[c];
+[e = *U ++ _dst * -> -> 1 `i `x -> -> # *U _dst `i `x *U + &U _base64chars * -> _c `ux -> -> # *U &U _base64chars `ui `ux ]
+"335
+[; ;SerialBase.c: 335:         *dst++ = '=';
+[e = *U ++ _dst * -> -> 1 `i `x -> -> # *U _dst `i `x -> -> 61 `ui `uc ]
+"336
+[; ;SerialBase.c: 336:         break;
+[e $U 662  ]
+"337
+[; ;SerialBase.c: 337:     default:
+[e :U 667 ]
+"338
+[; ;SerialBase.c: 338:         break;
+[e $U 662  ]
+"339
+[; ;SerialBase.c: 339:     }
+}
+[e $U 662  ]
+[e :U 663 ]
+[e [\ -> _ph `i , $ -> 0 `i 664
+ , $ -> 1 `i 665
+ , $ -> 2 `i 666
+ 667 ]
+[e :U 662 ]
+"340
+[; ;SerialBase.c: 340:     *dst++ = '\0';
+[e = *U ++ _dst * -> -> 1 `i `x -> -> # *U _dst `i `x -> -> 0 `ui `uc ]
+"341
+[; ;SerialBase.c: 341: }
+[e :UE 652 ]
+}

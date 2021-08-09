@@ -1,0 +1,4 @@
+http://mcommit.hatenadiary.com/entry/2017/07/09/210840
+http://nanicananica.blog.fc2.com/blog-entry-15.html
+http://www.lapis-semi.com/lazurite-jp/raspberry-pi%E9%96%A2%E9%80%A3/1197.html
+//ラズパイをシリアルで制御しwi-fiを設定するhp

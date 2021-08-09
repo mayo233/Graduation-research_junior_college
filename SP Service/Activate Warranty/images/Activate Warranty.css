@@ -1,0 +1,427 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+*{
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	}
+	
+::-webkit-scrollbar {
+      width: 8px;
+}
+::-webkit-scrollbar-track {
+      background-color:#fff;
+}
+::-webkit-scrollbar-thumb {
+      background-color:#dbdbdb;
+}
+::-webkit-scrollbar-button {
+      background-color:none;
+}
+::-webkit-scrollbar-corner {
+      background-color:#f7cfe0;
+}		
+
+	
+@font-face{
+	font-family:SOR_LT;                
+	src:url('type/SourceHanSansTC-Light.otf');
+	}                                         /*-------------TC/SC-----------------*/
+	
+@font-face{
+	font-family:SOR_RE;                 
+	src:url('type/SourceHanSansTC-Regular.otf');
+	}                                         /*-------------TC/SC-----------------*/
+	
+@font-face{
+	font-family:SIM_O;                  
+	src:url('type/SIMPFXO_0.TTF');
+	}                                          /*-------------PER-----------------*/
+	
+@font-face{
+	font-family:GUL_O;                  
+	src:url('type/gulim_0.ttc');
+	}	                                       /*-------------KOR-----------------*/	
+	
+@font-face{
+	font-family:GEN_RE;                  
+	src:url('type/GenJyuuGothicL-Regular.ttf');
+	}				                            /*-------------JP-----------------*/
+	
+	
+@font-face{
+	font-family:GEN_LI;                  
+	src:url('type/GenJyuuGothicL-Light.ttf'); /*-------------JP-----------------*/
+	}
+	
+@font-face{
+	font-family:ZAW;                  
+	src:url('type/ZawgyiOne_0.ttf');           /*-------------MYAN-----------------*/
+	}			                                       
+	
+
+/*------------------------------------------All--------------------------------------------*/
+
+	
+/*-------------------------------------------header------------------------------------------*/	
+
+body{
+	background-color:#FFF;
+	font-family: 'Roboto',Verdana, Geneva,"å¾®è»Ÿæ­£é»‘é«”", sans-serif;
+	font-size:13px;
+	}
+
+#WAPPER{
+	width:100%;
+	height:auto;
+	position:relative;
+	}
+
+/*-------------------------------------------page-------------------------------------------*/
+
+header{
+	width:100%;
+	background-color:rgba(204,204,204,0.8);
+	position:fixed;
+	z-index:8888;
+	margin:0;
+	}
+	
+header .header_w{
+	display:block;
+	width:1080px;
+	height:86px;
+	margin:0 auto;
+	position:relative;
+	}
+	
+header .header_w h2{
+	display:block;
+	width:314px;
+	height:42px;
+	position:absolute;
+	top:24px;
+	left:0px;
+	}	
+	
+/*header .header_w h2 a{
+	display:block;
+	width:314px;
+	height:42px;
+	background-image: url('images/phone/Logo.png');
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	}*/
+
+/*-----------------------------------------banner---------------------------------------------------*/
+
+#COMPATIBILIYT_BANNER{
+	width:100%;
+	height:auto;
+	padding-top:85px;
+	}
+	
+#COMPATIBILIYT_BANNER img{
+	width:100%;
+	height:auto;
+	}
+
+/*-----------------------------------------content---------------------------------------------------*/
+
+
+/*-----------------------------------------ç™»å…¥é --------------------------------------------*/
+#MC_CONTENT{
+	width:960px;
+	margin:0 auto;
+	padding:120px 0 200px 0;
+	}
+/*-------------------------------1107 CSSä¿®æ”¹--------------------------------*/	
+#MC_CONTENT .mc_title{
+	padding:0 0 40px 0;
+	overflow:hidden;
+	}
+	
+#MC_CONTENT .mc_title h2{
+	display:block;
+	width:100%;
+	height:45px;
+	line-height:45px;
+	float:none;
+	font-size:44px;
+	color:#00ccff;
+	/*border-right:1px solid #00ccff;*/
+	}
+	
+#MC_CONTENT .mc_title p{
+	display:block;
+	width:400px;
+	height:45px;
+	font-size:14px;
+	line-height:1.3;
+	padding-left:0px;
+	padding-top:16px;
+	float:left;
+	}
+
+#MC_CONTENT .mc_title ul{
+	width: 400px;
+	float:left;
+	padding-left:50px;
+	padding-top:16px;
+	list-style: disc;
+	font-size:14px;
+	line-height:1.3;
+}	
+
+#MC_CONTENT .mc_title li:nth-child(1),#MC_CONTENT .mc_title li:nth-child(2){
+	color:#F06;
+}	
+
+#MC_CONTENT .mc_registration .right .i_agree_2{
+	width: 100%;
+}
+
+#MC_CONTENT .mc_registration .right .i_agree_2 table{
+	width: 100%;
+	text-align: left;
+}
+
+#MC_CONTENT .mc_registration .right .i_agree_2 td{
+	color: #003366;
+}
+
+#MC_CONTENT .mc_registration .right .i_agree_2 td a{
+	color: #00ccff;
+	text-decoration: none;
+}
+
+#MC_CONTENT .mc_registration .right .i_agree_2 td:nth-child(1){
+	width: 5%;
+}
+
+#MC_CONTENT .mc_registration .right .i_agree_2 td:nth-child(2){
+	width: 95%;
+}
+
+#MC_CONTENT .mc_registration .right .i_agree_2 input{
+	width: 16px;
+	height: 16px;
+}
+
+	
+/*------------------------------------------------------------------*/
+#MC_CONTENT .mc_registration{
+	clear:both;
+	width:960px;
+	overflow:hidden;
+	}
+
+#MC_CONTENT .mc_registration .left{
+	width:45%;
+	float:left;
+	}
+	
+#MC_CONTENT .mc_registration h4{
+	height:60px;
+	line-height:60px;
+	font-size:30px;
+	color:#00ccff;
+	padding-bottom:10px;
+	}
+	
+#MC_CONTENT .mc_registration .mc_account{
+	padding-top:0px;
+	padding-bottom:10px;
+	}
+#MC_CONTENT .mc_registration .mc_password{
+	padding-top:10px;
+	padding-bottom:20px;
+	}
+	
+#MC_CONTENT .mc_registration .mc_login{
+	width:140px;
+	height:36px;
+	padding-left:0px;
+	margin:0 auto; 
+	}	
+	
+#MC_CONTENT .mc_registration .mc_login a{
+	display:block;
+	width:140px;
+	height:36px;
+	line-height:36px;
+	font-size:16px;
+	text-align:center;
+	text-decoration:none;
+	color:#00ccff;
+	background-color:#FFF;
+	border:1px solid #00ccff;
+	border-radius:18px;
+	}	
+	
+#MC_CONTENT .mc_registration .mc_login a:hover{
+	color:#FFF;
+	background-color:#00ccff;
+	}
+	
+#MC_CONTENT .mc_registration .left p{
+	padding-left:0px;
+	padding-top:16px;
+	text-align:center;
+	}	
+	
+#MC_CONTENT .mc_registration .left p a{
+	font-size:13px;
+	text-decoration:none;
+	color:#62defd;
+	letter-spacing:1px;
+	}
+	
+#MC_CONTENT .mc_registration .left p a:hover{
+	color: #95e8fd;
+	}					
+	
+#MC_CONTENT .mc_registration .left input{
+	width:380px;
+	height:32px;
+	font-size:14px;
+	color:#999;
+	font-family: Verdana, Geneva,"å¾®è»Ÿæ­£é»‘é«”", sans-serif;
+	background-color:#dbdbdb;
+	padding:8px;
+	border:none;
+	}	
+	
+#MC_CONTENT .mc_registration .right{
+	width:55%;
+	float:right;
+	overflow:hidden;
+	}		
+	
+#MC_CONTENT .mc_registration .mc_fb_login {
+	height:22px;
+	line-height:22px;
+	display: block;
+	font-size:14px;
+	float:left;
+	}	
+	
+#MC_CONTENT .mc_registration .fb_login{
+	float:left;
+	}	
+	
+#MC_CONTENT .mc_registration .fb_login a{
+	display: block;
+	width:75px;
+	height:22px;
+	background-image:url(images/desktop/member_center_like.jpg);
+	background-position:right center;
+	background-repeat:no-repeat;		
+	}
+	
+#MC_CONTENT .mc_registration .mc_mail_login{
+	clear:both;
+	padding-top:20px;
+	padding-bottom:20px;
+	font-size:14px;
+	}
+	
+#MC_CONTENT .mc_registration .mail_login{
+	font-size:14px;
+	}	
+	
+#MC_CONTENT .mc_registration .right input{
+	width:470px;
+	height:32px;
+	font-size:14px;
+	color:#999;
+	font-family: Verdana, Geneva,"å¾®è»Ÿæ­£é»‘é«”", sans-serif;
+	background-color:#dbdbdb;
+	padding:8px;
+	border:none;
+	}	
+	
+#MC_CONTENT .mc_registration .mc_lan{
+	padding-top:20px;
+	padding-bottom:20px;
+	}		
+	
+.mc_lan .styled-select {
+	width:470px;
+    height: 32px;
+    overflow: hidden;
+	background-image:url(images/desktop/new_arrow.png);
+	background-color:#dbdbdb;
+	background-repeat:no-repeat;
+	background-position:right;
+	border:none;
+	border-radius:0px;
+	}	
+	
+.mc_lan .styled-select select{
+	background: transparent;
+	width: 470px;
+	padding:5px 10px 5px 10px;
+	font-family:Verdana, Geneva,"å¾®è»Ÿæ­£é»‘é«”", sans-serif;
+	font-size: 14px;
+	color:#999;
+	border: none;
+	border-radius:16px;
+	height: 32px;  
+	-webkit-appearance: none;
+	-ms-appearance: none; 
+	-moz-appearance: none; 
+	}
+	
+#MC_CONTENT .mc_registration .right p{
+	font-size:14px;
+	color:#F06;
+	line-height:1.4;
+	padding-bottom:16px;
+	}
+	
+#MC_CONTENT .mc_registration .mc_next{
+	width:140px;
+	height:36px;
+	margin:0 auto;
+	}	
+	
+#MC_CONTENT .mc_registration .mc_next a{
+	display:block;
+	width:140px;
+	height:36px;
+	line-height:36px;
+	font-si‡•µÃZ‹}ØËVúW‚˜1zU:¯«¢‘A>§h¦Ã¦=Ã¨
+¹ä|ÙÏ°âÔ˜a•¸šoÞÅ}(SÊ…Nn$Yu~¡pLÏVÛ—˜˜îhÑŒÖ9ÞU«ê~¤{¯ãÉ}­í‚aŠê`™ì×žŽ÷<2âÕóð9‚=/vÙË_ø'Ö2Ãý'8R|æöŠD®¨ÒC™¯0èzŸ%n%§Ý'÷Ô<ÔÛê¼ ÊÌ#™}u=Y™°r²Ø1™ÌzëiÖ”1Xº ŠÏh’k rÏºTê#zÿ§ÆaµÈ÷ÀòÕ>-LñÒ/bÚºlùyh`AÓ¦²Ü.˜Ñî÷Q‚Œ?Bw§@é:B
+†óYOÉ,ÀÈŸË&À
+ÅÆ• gjË•Q,Þñ\ÄM>
+ÚP1Jý&¨\!2p³Îû4Äk0¤õ¡u¼6OSzi\	å8MóÙ¨ûŽž0¯yø¶¶K3ƒIéª„$³":¥L"ós¢B?Ì˜;"é”ÐF­hñ!³K—&8€&Áa¾™
+TQÔÎ#™cŽFœŽµ[Ôy®ô±'ªÛXµÈp-9¯Ù:€ÓÖüÂöy§Ø|oõDúð™ùrä›‹1`§Ó×•—uàOË7.Ïø‰IÔ³uˆ˜3µ´ÿ)9Ê‹ª÷n b)^N‰v+<Jsº/#as\Ñ²BÍ;ÊùF‡ïüÝ¤ƒ!Ð„_¤‚J«dU1îHh7µ•'.àT,¼LÞtmý¦åæ ÞGm­ûL•F¨8MÍ]øÀÑ^ë ©2ª¾nF"18·wyÐÐ=$I¬cq5™”#SÜÁO ­$ óÁÜÑ+,Å/·u9$?[oZä‘l 8õ<Xþ$+NšXw?íÐ×G>QÌ“#ç=pŒ÷¾yü`¼„]‘C6÷§!o–ÊsÕiš‚t/ó²_Jkø˜‘¢ûJk¢æ\Ÿí"¹ØÇ	:K¸ýTOž³nú»!„.¢ªÀÁcD/Ë&Æwp}æ€üï½û»’¯dL‰°ìü¯Ãòƒ×”)	O$|×²GµMz*RÃa¤Sà•Xs¸vjr»ÏY†	TyýÅ†i5;µü
+óõÃx^meHåÎçà‚û5·
+ðb%Èæ**)$î)¼¯Ï‹O™žœ~ö‚r&/5»ÞTÀiÿ¬JŠ¢ Å>Ï5‘”¡Àb»£}§Ñ×¼vØ $¦Î@Ãp·
+ðäšàJ6ËK&&3–Æli¹FÀ*ÃÁ§*¯fºLT)ÿ^½ØGv¥Ã¶#8sºèáYd6H¬ÕªXÛƒAËƒÅÖbuu¿¾ç07üñ	œÆâÒ‘ÝaN€äZÔFbÂX­†ù¨Ð]a×hÿTqRšß¥Š¶Å ºšëÆþ!¼\§pè/…ÁÌøÜto‚võˆ¾&-¿mû¯žªžÃ3PxJJÜàËÑœÒp2{U*D1~žRŽ¤o2®ZèN{yÙp¨\ûø·Í0MKKMq„ô…= #9Õ”vZf±À¯ÙÞú’§ÓÔÏHò^ßù/*|Wæ¾úÒ?üÉÖª(âa08Ib(ö·b¤¥GÊÌäU3wÇÎ‚VM]R©® o¯?åÛUP÷ÈÏM¾Ä´¶)ßóÈª	éÜ{M
+pZ«©Êh6ÞõÿC A¢Ú4¿æG)™ó>ê-Íàù2*)”2ã¨œfi1Ðü¼àçMjŸ¾ ÂÝÞÆÀ	'öÿ?>GŽâ(V ÷‘Ò€[¢ó©ðÀ©-¦ÔÐ ‘3ˆcÂA;¿˜ó5¯Ý@mŒ¬a½8w“Q—eðRAÈë(ÕdHÓFš{¼7ü>6Y\Š½53]°y»yýRNé–ÑµpŸt¼×…mþÎ7>Óô"XR|±ßíá+™Ó8›€½› 9£Ú8ZªsÎ³Ûwj@R³` ­r¢1ßOôÝzâ'‚Ó'ÿºÝªI æ=S­ùj‰Òžr#dÖ&Q·„0°;Dáb™5ˆaÕ%H‡–Ñmma‚ø¼AËAÁ¦AÔ;Tý©Rzß
+³Ö«[üY{èÔJ;²?®©tgû}Ä	÷õúÚÌNˆPYŒXÃõM‰^dÏ¬	øÝ·¸øœì¾3Áƒåù(d!c%1uõÉÔÃÿÄ¤ø ìx”ïQûs–FzôÌV-`‘[Jãƒd=±µ¨H#ìBZîùN#)ÙS¯ÀÎ¤\Õvï+"ˆWbå•Î¥TÊ×Æç':ßñ§¹ió÷E•£ÚçoxÚÍ¾7‡‰Í¢1nþ¦ íëÏ ¯»a¬çr…>.ˆÛBäÌarS[M‡."1è47 c•æ=ÿí›zÛÙéð©®Œ¸»y0)êµèœç2ÈŸû¥y*ìõT¡ã)ÖN*JËñ>Ç×›™{¨T‚ó‡Á)½v#˜ËÈõ`÷ª’ËÑ‘ÊÛ¯‹L­Ì:¦âË€R&,ÅuŽ=†øop—³tx¹‡6Ê ]C›ÝõÔŠH›Õ
+wLË*o,ÿ_£æ¢=ÅGh
+ÙN”mðŒŒú|¼’†ÔYÚ /‚¦þÐUü…µÿ8ïz/~è<©ŽZe#èUkÂŽrU‹¿Ÿý{×;Å’û:üz>èÄFy’îÅ'æòÿB×g]	ôëF"·²…ž½b˜ò“`;é0ÙW{°:ŸÇmÁØˆTî‡e 1qa0ð4Ìœ˜g<¨“jDÞ/ÿò.€<ýq76¢±œ
+‡`ˆ<–W›Ýs||îwË9úyË‰p)ojª˜¨ÿÁT€¦ÔfÑ Ue”ÚL’§iäÛ^áúiè!ÑŸ'‹ÜÕÄ#[9©Ñ¹Î6,CKõ:pJ§€æNL˜i©9©ïáƒkzúI×ù•0(ÜâžªÝ‰¼\H-Cü™|Vˆå¶sò<¶DÖÜ&ÚPÝµf	Õ§ÿ7–Ð>Ç[pêk‘²mù$¡
+Um†Ì ~É{é¿1^3»“Œ1=å7…žÉ:R8 /5óƒé®›·tpÈÛeefáAÖZÀ#%ôÒîH?Ò;¬/>²V:?}˜(•N£<‹(”±~þg*Ò=óÛ±à4N™·¹­™˜žcÛìãQ´¶jš|Äšir_™çLkã•©ñ»Dez¢i!­b¡ÁEky)ˆ5^¾-·Qk*X›P¤ú€Éµ[‹'@÷•X»g*¹0z÷Ð!³G4~äï
+8¾gJmð#e½]46œbA¡ëè»l„lFHNQÝ™Èh$§ÚrèÜl)âéÑÔ®èÈêÛ)i¿õƒwîÔ%ÒéÃŠ*VÜœ½Îÿç<¦ eSê47·~«®¶6	:í'¿¿¡ˆ	žX@ÂƒoŠ
+º¾Kž¯£@›<¥jg€t–²»€²g4¤‹ÊîˆstNµ{¾Õª&šnîwr`ÔˆþÞwŒ4ÎŒ°Ö·ìöX™?Ï‘¢ry+,-¡¾±ú? òL'…4Æª¢†a“GøÜãªê¥;å· @ÀÞ^[ —tÜ0é*ƒ¤(&Ÿþ´_¦H‰kO=¼’¹]¼¯KPP0&VÐc-öm–Íªg¸š‹WL•…“yÐ­‡Úæ>î&pGªX`Ü¿Š+p¢=à¸^¿f=c:Zö3|vwœ±†,½0jGÌ‡4ßj¼Ô™te-'Õ añ ^«À‚Œ|ø«%'æd×J§ÇMçÊØM‘%±ôÌoNG¸°¤‡rÝ­ö²V„×ôv+‚™¬Å‚óBû­8\_ËbÑòG±Þ.C™ôù’™ 	Mi5ccó%¦3epEéSïˆ{°ÎÌ(Ç5öìÝO»Î•RK/kn§Ÿ{ÿò9L
+ð§ÚoF5QÁc¯×¯XÈ@X¡’6Ð­Ã‹âV_8öeswºaÜ.çd&Xb^qµ‹ñ0 	JF†„g™\¬ÑÐc¥gm3qòð ¶"ÏŸ÷{ë!º|Ý@°»ìzf<¡ùbî7ˆ¬ì¶)þiÏ²'FŸÁ~SJSt×€2`[Ê¥.‹/I6DŠò~Æž
+æ>Wš íßbCËà ÍÝQwÿtq¶uÖ´Þ¬tR_án¿Q±Àø2¾po£¦ï†ÍgeÿÑ)•½sFÔªÏñ~L¼”©˜=_9×Â3XÃžà¬&D¾mèËt*±'œˆûOÜùšâè‘5Kâ»÷|VmÈãYÚWI³7ŸßÌ'%Žj¢$˜¾¡¡œC±àO‡Ã”‚˜çV€1Ëï¥H/ß@‚íÓ§÷ÈÃ]í£mº‰nÃ¸zß]‰7.jë¤ßITe·º´DÞµ&IÙ¡¨i|9Kmc=ªPt®ÏX3”-þK;Â?¥£B“'L™aOÔ«¨
+xg~Y¨ó4µgEé/Y\ZeôoqzS#R<3Ãómò lJà=Â{˜›Dì*ð"b0H|ù´p½ùx²ÍÝãªo9ÛáAJª•t7-õ˜í± E‰ òu†p0¬ÓÅƒ×ãþ‡k¨.ÄÏ›&Ì,_¼fI‡TëHš&Þ#D{S#þçœšQZ1Ô´šýÅïê¥üO¹ªhðî}`8GÙœv‰C#3ÿAÿ"µ1Œi kli÷£®ÓL¡N¸*Ù‰Óõ	FåÎt  Ó¼	 ÜtY‰:RñË.>a¦h?ÑZäº*‘ýS)K"ºìCr[;7Zû‚ÂPÕ0è‘:“îðRÍ2Õ¦ùíÔ=eÜÒµ/dk•-ÜÕD¢£í.Ò„ˆ\–_öwæøCV¹¦ðÄ7•8LUgaL~FÆd»„ æÉØÕ_ümùªÕDRì&Ù!óþñÝ3r­ò­òF JÔÑ",Å_@´®l¨ÇLŒ±½Ì‰w@GhŒB!å	‹ýŸþ1Öh!oXCÍ6?ÏÀhÒ¤ûë²ÐÚ“uùóSvT‰Å²i¯ê0âI~èêÞßG¨üýöS™b(%5ì÷3nü—¬ÕLÝßÈI5±/Á¡;`¨§Ãòžÿv6‹aÍÉ«0‘Q×üy¸$H˜uÓäþC)Ô3½Íâ%ÆpÞ³’Aê‡Ï±öÐ¸®É…$šk(o¡¼
+´G¡:ìZÑÉ1[oëÍrÚÔïå‡tF=sÓEr	.#&Z;sÌè{
+Œìs+U žiwï~ÝµèZµ€œ]®&©§VŽß"²ðé_ëÏ¤€Ø–ÙrsN|iRj6}‡uCoœÏû4h±Ÿ÷ºA#n1¦#õkg’­4T½
+Q2÷pöå¥»:îšžÊ·ûGî
+ò?ˆÎÀ‚±sÍS#Á7ÃE€Á¬™„.¬&•H_ Š–öØ#“=ù¯5¸Ç«¼‡`·ìÉˆJFî}_è&Gç—ylEn^ÂYS4Ãš©uY7ô©MŸ»(úAWù:N1.î›´	HÇmrâKÅ=¼ÑéœtÄvìÕE	|sXˆHÀË@1K‡ØýÑU§¤#”ÎkT¢$¨à4Š“pœ¡¬äØ{ã·‘ƒß¨‚òxÎEhW»î¤¶äÇ.­Ùá6ÝžÉÔ‡XM³HwuOg+@×ýïN Ø¾ g¤-¨“Ó©×2á¡Ï	)ë“ò¥ÍYtÚfÑØ§hO4×÷¹âÔsV62DÖ„Èîï(‰¼7^œÈJ¼ë¹²A-x’¦¸¯ªÉêTþü{#Ï´øÉOóz.ùg“øux£ÜnmÙf»1:}Š1¶´|æ;Â%._.³ð`‚Û%Ù25AÕh@"ü‡šÄælíýe,£,_'¿*V¿–…‹òV"„…ÚáäHé9ÓVá„ f»àÐ4Œ ¼ø'
+ýÝscGŒ}~r®—³Ê«lbˆ"ñ
+‡*}*ˆÏsÊ«yyoÛžp9÷OÀCÒ¡‚Wpn£ !tã	Ûì²GÕÓ)—˜Uö¨Tò&ì-B[‚ ÑÕQ$ðÅ\î]ÍM5ÿÚ¥ãVJ:ÈDË(lbX‹'nÅWb¦ŒÁ‹Ñ3ê®p´®oŸõ9|kÙ»sä•÷ª½3ôa,ÙÀbñ¦^€ìÝ/LìawmŽç?ÖÜ»V$ºayu¤@n³1ê±‰(+öhË¶uG=Ö†ÐTDÚ3w“þ_%0}vhÍ~RSœ¡çj¾Š­áÌÓáà`~âU*0c³}/Wlqø‘Â"‰²mŠ”£iS~* PBŸ&0cK£D¼z}ššl;aB4Á(§«7Li}ëºæ“)WlO™µÒ¾|ŽÕ$ûVål>QÓsnÝx’æ¾˜c]ºÉE-Mãõ#r¯Gí7Kn¨ýôà’¸óOSdÏ¬¹éê’¶j8÷âÕŠ­Oé×Ë¸Ã¹ªRÒô>á¥Iú7‡ñLÅõ²Ó0|1ëÓ–!4²ýéˆhJÖ—¹˜éËÅ»üsŸýÐaäNÔ«5ê|}¬KáÙÀ-sÕ/w­òÀ›x­I7?¤ƒìÈÜá| ´–„ªÉ²?c±©ˆ’Ô™Çö~c$ÚB±332Y2GÆÞŒ}Îj™…·ñç'}å†=XòËƒºŠÀ*h™÷[eM ˜ð8éFJ÷Á™®Kƒ5 a‹1øÅÕ´o¨*‘€z©åÚº¡á´'sä–iæCÃâƒ±;Qä-£Û,Þ¹uÁ˜Å æ´R8%øô*E¾ê^mXÌOãf5Ø„Gù1ýÀ Ÿ•Š[p©'€6Õb§±å§+’_ÃHw¸Wº}k¤¼Î_ŠEY8 F¬Î’™W0*Ç RbÏw‰P•ÿ³ZPL)oˆ‡jóGóÖƒ‚ÏÈ<¶ìûº.ËöZÜ-´6µ4¯v¤·¼K,Á³ä®“>’ûvHv%ÿÖE¤­h<9n.äÙ,N'$å`&~X°¾qØÓnžŸ–ÌÁÍº”é«ÿ_Æ£"÷½‘GŒ¶ÚCÚHV£Ap¶uzoqìÈù¡ÕÇy”¾O€,&áÌáû]iø{¾Fð¦ýd•Á'Ö•ßh/ž^âßš‚k%Fž:èð7´þBB¯²¥¿%|ì=üG…9ê6Ï…'Ã·HC+ð³³‡äÚwt$œöY³ú‡©TÚŽî¥ÝŸ²¯µ‹¦¹ÄÁ¬kL¬È¾ÐìmÔ7X0‘0ŽLjˆþÌpéµÖÞkeúj·
+Sð£³JüMr“˜t&Ç|#í½çŒ¢ë¿žâmcäˆ¨63D¶Kþ›”sŽEÖi)fŒ’4ÚT~æ@½±t …öñS‹5¸OŒLéÅ2Ø÷¡ÂäíÕO¡ê9Ü°“¥íÐzl»rÏ$À?>àÜ§‹wØBO6wì
+îf%+ÃÎÊ° æÕ$²Jeˆêm=ŠpNe¨ëd¶™²©^\ô-¶\üÁþ+P¶,ÑvÝ«gñ%X!¯üã‰úÄ3Ìë—|Ÿ²\ÚÐ¦Ä±VäñM,Y?¢Æ–XÎu	{5q-ã›lÚ /–«8uŒ°ƒ  …Õ$QBº~=¡~(ŽeÕÉ]3ÖÝ>œÓî’ïzMã¹KÛ+°tO¿{Ò†q¢JG41Ä=ô»§*“¸!c‡´Â¯îä¹¸ÏP¶F	´œ‘Ý¡&[PBòÔUyHÍé€ÞÑ³)¶^[ËvJ­	Ç†!¹¬DE××hÎÎ<Ë™|¤¢*ÆË)Noex<âcå–ªè,Zé% äøÁ"Yï_»ÿ’Î~G„R‘S^nbW©ãN	d‘bÁêºø",A‘ ­y×ýèôñ[ÖnÍn-‘(h±lC·!hBAL Ø±¦ôV	Ý¿ÚÇÂs
+“®‰Ù‰4§!#ÒÆí@‚Zæ®\Æ‰³væ¸„‹GÞjDjpþç3£äc›ã÷ˆ™HbÐ5Í{Èo*^ë\ƒ?Ž²h§c¯€ƒTõa€àïÛ›êübÔ|¢â…žvéL*šx ©	©KˆtýÊÇk×öÝfÙG5B¥ý2×Ýüè¼ŒÈœÖé‡ ¦=wk( ¯ÒûüÀ;N(™ø}ŠV½)¿‚´4¾%‰|È%QB—ØQDœ“C*d¡¸‡Ä=r¸>ˆ6q×éŸœ+AnŸôí©@ñ@~Có¤ï-¿r{¶^$ZêºN¦ÛN74¶æ2Yƒ2½…Ÿ„nhu	¨%—ùÞwÇÁ¾‡7'À
+i6:AãÐ
+_Í?Ëð~fB\†›%c®ëøzÕí3XóZ›s+ç,G1.Žä²Ü‚ûðèNÕTZN #^”‹¼·1/RJD$;2ã8MÚ­6ÁOPñKvpÊF³–Îy@ëû'8ºqŽn=ÙµåÏfjþBéF]“-; 	™wÚvÒG¤ÿä!þÙn´ü.ƒœÇ`%0-¥3ŒF&z‰ŠLú<ßAhó5|…Š¹DÆðH	ˆ0žµZ¢ó¼Í Ïƒ‡¤ÙˆPGbû §§iH ñ]»¢\)¢ZÜ¼âÚ^”Na‹Pñ²Å…8Mº?‘Fûçõ7Â+ûòPMBíy±œ@rv–§z@X*v°fÌ£=µGc ¹6&þŽ1	@RÍöÂ$8ŠRæ#«M´þKUèõŒ5ð¹†èðB¯±9{•2qkäqm8š™QçLC7ëë³cü}þÁ!ó3KþA1Ùr=å¾ö¶ØmýÓÁ= 5Ÿü³u¦ýgCÔæ“XJ<ºê	sE(ÁÍ)Õ@²…eOªfÓáÇG Jª~r¥/M½å÷îÏÖ@w@Mð•‘…rt[¤ŸÝ†…:Âé¢²6×ÄQpýö•¡žõÅœª‰§ßòK]ŽªSÛî5¥„Ý“~mÎ§‘ÆwzäéÀF ×‡:°”öé­‘ŠˆAõÅ5CÎ†WVÅ®(0–w6‚5	~ÿ ªéG!Œ¤¶	r†ºãm¹#ƒ„4ÏçË³6ïÍ»Å_¹µEàOs¸W›Â1†ŽÕW}§yÉHÈ0ˆÛ¯•vÒ!i´Úy'+Ì%¦Ï=­$SÍcrYÌX‡Ž£yÖ8þ­!]%H&ŒÚÑÉàê·õðjvKut6eèzõîÍ«Ãÿ#÷¦¾Tn´£Ôsû‘Kc_a#ûÛÌYìõÆøÎj…¾ê¹ðÌƒh¬.×•Ài§Âþ&ÓŠ\By“.Ø§×àEƒ-Dþ`H[{råððTá¯èd1tyÒÕnXô(5Bî¡ç`ýu³py_öBàòëŒÖúãƒ¦bÓ«
+,ã%~dp¡Üã½&–4MH¤q3§ëø\Ç½&óÓ¡±~^«œltšrIäB]íà@â¶¹	Éq?jQ“&‡Øw¬Òç+N•’PÓ» PüD5[3NŒlj»ž-KuËùÞ`Ç·b¥
+|Ú·ìŠ‘P ÌœÈœÕ=¨ÄüÔNè	Õ¢«ÛK’q¿+Ì;É…%[n×Ÿpõ’$`fWùü	è6NÇþÂð½#ñè¬	vIMÒŽôå•Ù…IÛÇWÃw|KYãWùz€Ï†J¢)h"è&Óëwî¦ÐiBçq/ùM?*±O;—†,úy‡'ÔÉ+1—#¢B #œ5hï2ÜQÿ{ÖP¾Þ=múÄÏÏÍt¹Óîøx~xkÝ]›éë
+‡NÔ¸ÌàÚÓýtgðØ–×žÖo{H*ýFÄ¶‘lÇú•±ª²êÁ_]Ã¥&%™ŸIõ/E‚vÊÅß™ÏÔ,æ	µ.õ³Àm‹ÿÒtõ[×Bïl‹¢‹,“#õ(+žS^Ï¼XÍs±dU÷·vÇâÞáçÃ8wµ*û¨LB,7v‡A= n=#gBgd(–äJ{Ë´²írÑ
